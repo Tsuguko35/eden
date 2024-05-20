@@ -1,0 +1,67 @@
+@font-face {
+  font-family: "DM Serif";
+  src: url("../assets/fonts/DMSerif.ttf");
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../assets/fonts/Inter.ttf");
+}
+
+:root{
+    --background: #FFFFFF;
+    --secondary-background: #D9D0BF;
+    --primary: #1A4443;
+    --secondary: #BFA280;
+    --text: #232323;
+    --accent: #F0C869;
+    --accent-hover: #d3af5b;
+    --label: #ABAEAD;
+    --hero-overlay-dark: rgba(35, 35, 35, 0.25);
+}
+
+/* Global */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: var(--text);
+    font-family: 'Inter';
+}
+
+img, picture, svg, video{
+    display: block;
+    max-width: 100%;
+}
+
+input, textarea, button, select{
+    font: inherit;
+}
+
+a{
+    text-decoration: none;
+}
+
+body {
+    background-color: var(--background);
+    min-height: 100vh;
+}
+
+*::-webkit-scrollbar{
+    width: 10px; 
+    height: 10px;
+}
+
+*::-webkit-scrollbar-track{
+    background-color: var(--background);
+    border-radius: 20px;
+}
+
+*::-webkit-scrollbar-thumb{
+    background-color: var(--secondary);
+    border-radius: 20px;
+}
+
+.pages{
+    padding-top: 80px;
+}
