@@ -45,7 +45,7 @@
 #landingPageHeader > .wrapper > .header-text{
     position: relative;
     width: 100%;
-    height: 100dvh;
+    min-height: 688px;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -108,10 +108,10 @@
 
 #landingPageHeader > .wrapper > .header-text > .sub-text{
     color: white;
+    font-family: 'DM Serif';
     width: 100%;
     max-width: 1000px;
-    font-size: 20px;
-    font-weight: 600;
+    font-size: 48px;
     text-align: center;
 }
 

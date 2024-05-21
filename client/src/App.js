@@ -3,6 +3,10 @@ import { routes } from "./config";
 import "./styles/styles.css";
 import { NavBar } from "./components";
 
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+
 function App() {
   return (
     <div>

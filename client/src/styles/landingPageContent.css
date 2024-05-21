@@ -1,0 +1,341 @@
+#landingPageContent{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#landingPageContent > .wrapper > .withPadding{
+    width: 100%;
+    max-width: 1440px;
+    padding: 100px;
+}
+
+#landingPageContent > .wrapper{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#landingPageContent > .wrapper > .company-details{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#landingPageContent > .wrapper > .company-details > .details{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+#landingPageContent > .wrapper > .company-details > .details > .label{
+    color: var(--label);
+    font-size: 22px;
+}
+
+#landingPageContent > .wrapper > .company-details > .details > .title{
+    color: var(--text);
+    font-size: 32px;
+    font-weight: 600;
+}
+
+#landingPageContent > .wrapper > .company-details > .details > .description{
+    color: var(--text);
+    font-size: 18px;
+    font-weight: 300;
+}
+
+#landingPageContent > .wrapper > .company-details > .details > .action{
+    width: 100%;
+}
+
+#landingPageContent > .wrapper > .company-details > .details > .action > a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    height: 60px;
+    border: 1px solid var(--text);
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 600;
+    transition: all 250ms ease-in-out;
+}
+
+#landingPageContent > .wrapper > .company-details > .details > .action > a:hover{
+    background-color: var(--primary);
+    border-color: var(--primary);
+    color: white;
+}
+
+#landingPageContent > .wrapper > .company-details > .image{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#landingPageContent > .wrapper > .company-details > .image > img{
+    width: fit-content;
+    height: fit-content;
+    object-fit: contain;
+}
+
+#landingPageContent > .wrapper > .innovations{
+    width: 100%;
+    padding: 50px 75px;
+    background-color: var(--primary);
+    display: flex;
+    justify-content: center;
+}
+
+#landingPageContent > .wrapper > .innovations > .container{
+    position: relative;
+    width: 100%;
+    max-width: 1440px;
+    padding: 50px;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    gap: 75px;
+}
+
+#landingPageContent > .wrapper > .innovations > .container::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 50px;
+    height: 250px;
+    transform: translateY(-50%);
+    background-color: var(--secondary);
+}
+
+#landingPageContent > .wrapper > .innovations > .container > .carousel{
+    width: 50%;
+    
+}
+
+#landingPageContent > .wrapper > .innovations > .container > .innovations-text{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#landingPageContent > .wrapper > .innovations > .container > .innovations-text > .label{
+    color: var(--label);
+    font-size: 22px;
+    text-align: end;
+}
+
+#landingPageContent > .wrapper > .innovations > .container > .innovations-text > .title{
+    color: var(--text);
+    font-size: 32px;
+    font-weight: 600;
+    text-align: end;
+}
+
+#landingPageContent > .wrapper > .innovations > .container > .innovations-text > .description{
+    color: var(--text);
+    font-size: 18px;
+    font-weight: 300;
+    text-align: end;
+}
+
+#landingPageContent > .wrapper > .line-details{
+    position: relative;
+    width: 100%;
+    height: 66px;
+    display: flex;
+    align-items: center;
+}
+
+#landingPageContent > .wrapper > .line-details > .lines{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 66px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+#landingPageContent > .wrapper > .line-details > .lines.left{
+    align-items: flex-start;
+}
+
+#landingPageContent > .wrapper > .line-details > .lines:not(.left) > .secondary{
+    content: '';
+    width: 333px;
+    height: 13px;
+    background-color: var(--secondary);
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+#landingPageContent > .wrapper > .line-details > .lines:not(.left) > .dark{
+    content: '';
+    width: 202px;
+    height: 13px;
+    background-color: var(--text);
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+#landingPageContent > .wrapper > .line-details > .lines.left > .secondary{
+    content: '';
+    width: 333px;
+    height: 13px;
+    background-color: var(--secondary);
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+#landingPageContent > .wrapper > .line-details > .lines.left > .dark{
+    content: '';
+    width: 202px;
+    height: 13px;
+    background-color: var(--text);
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+#landingPageContent > .wrapper > .visuals-container{
+    width: 100%;
+    background-color: var(--secondary);
+    display: flex;
+    justify-content: center;
+}
+
+#landingPageContent > .wrapper > .visuals-container > .container{
+    width: 100%;
+    height: 100%;
+    max-width: 1440px;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+#landingPageContent > .wrapper > .visuals-container > .container > .title{
+    width: 400px;
+    color: white;
+    font-size: 32px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 1024px){
+    #landingPageContent > .wrapper > .company-details{
+        padding: 50px;
+    }
+
+    #landingPageContent > .wrapper > .company-details > .details > .label{
+        font-size: 20px;
+    }
+
+    #landingPageContent > .wrapper > .company-details > .details > .title{
+        font-size: 28px;
+    }
+
+    #landingPageContent > .wrapper > .company-details > .details > .description{
+        font-size: 16px;
+    }
+
+    #landingPageContent > .wrapper > .company-details > .details > .action > a{
+        width: 200px;
+        height: 55px;
+        font-size: 16px;
+    }
+    #landingPageContent > .wrapper > .innovations{
+        padding: 30px 20px;
+    }
+
+    #landingPageContent > .wrapper > .innovations > .container > .innovations-text > .label{
+        font-size: 20px;
+    }
+
+    #landingPageContent > .wrapper > .innovations > .container > .innovations-text > .title{
+        font-size: 28px;
+    }
+
+    #landingPageContent > .wrapper > .innovations > .container > .innovations-text > .description{
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 1023px){
+    #landingPageContent > .wrapper > .company-details{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #landingPageContent > .wrapper > .company-details > .details,
+    #landingPageContent > .wrapper > .company-details > .image{
+        width: 100%;
+        justify-content: center;
+    }
+
+    #landingPageContent > .wrapper > .innovations > .container{
+        flex-direction: column-reverse;
+    }
+
+    #landingPageContent > .wrapper > .innovations > .container > .innovations-text,
+    #landingPageContent > .wrapper > .innovations > .container > .carousel{
+        width: 100%;
+    }
+
+    #landingPageContent > .wrapper > .innovations > .container > .innovations-text > .label{
+        text-align: center;
+    }
+
+    #landingPageContent > .wrapper > .innovations > .container > .innovations-text > .title{
+        text-align: center;
+    }
+
+    #landingPageContent > .wrapper > .innovations > .container > .innovations-text > .description{
+        text-align: center;
+    }
+
+    
+}
+
+@media only screen and (max-width: 425px){
+    #landingPageContent > .wrapper > .company-details{
+        padding: 20px;
+    }
+
+    #landingPageContent > .wrapper > .company-details > .image > img{
+        width: 300px;
+    }
+
+    #landingPageContent > .wrapper > .company-details > .details > .title,
+    #landingPageContent > .wrapper > .company-details > .details > .description{
+        text-align: center;
+    }
+
+    #landingPageContent > .wrapper > .company-details > .details > .action{
+        display: flex;
+        justify-content: center;
+    }
+    #landingPageContent > .wrapper > .innovations > .container{
+        padding: 20px 15px;
+        gap: 0px;
+    }
+
+    #landingPageContent > .wrapper > .innovations > .container::before{
+        width: 15px;
+    }
+}
