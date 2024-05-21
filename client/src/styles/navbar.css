@@ -1,7 +1,7 @@
 #navBar{
     position: fixed;
     width: 100%;
-    height: 100%;
+    height: 80px;
     display: flex;
     justify-content: center;
     box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2); 
@@ -19,7 +19,7 @@
     background-color: var(--background);
 }
 
-#navBar > .wrapper > .logo{
+#navBar > .wrapper > a > .logo{
     width: 130px;
     object-fit: contain;
 }
@@ -27,6 +27,26 @@
 #navBar > .wrapper > .navigation{
     display: flex;
     gap: 20px;
+}
+
+#navBar > .wrapper > .navigation.mobile{
+    position: fixed;
+    top: 80px;
+    width: 100%;
+    height: 100%;
+    right: -100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    justify-content: flex-start;
+    gap: 20px;
+    transition: right 250ms ease-in-out;
+}
+
+#navBar > .wrapper > .navigation.mobile.open{
+    right: 0;
 }
 
 #navBar > .wrapper > .navigation > a{
@@ -88,4 +108,10 @@
 
 #navBar > .wrapper > .navigation > button:hover{
     background-color: var(--accent-hover);
+}
+
+@media only screen and (max-width: 768px){
+    #navBar > .wrapper{
+        padding: 10px 20px;
+    }
 }
