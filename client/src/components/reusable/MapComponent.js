@@ -12,6 +12,7 @@ import "leaflet/dist/leaflet.css";
 import markerIcon from "leaflet/dist/images/marker-icon.png";
 import markerIcon2x from "leaflet/dist/images/marker-icon-2x.png";
 import markerShadow from "leaflet/dist/images/marker-shadow.png";
+import { GetWindowWidth } from "../../utils";
 
 // Fix the issue with missing marker icons
 const defaultIcon = L.icon({
@@ -28,6 +29,9 @@ const defaultIcon = L.icon({
 function MapComponent({ zipCode, submit, setSubmit }) {
   const mapContainerRef = useRef(null);
   const mapInstanceRef = useRef(null);
+  const windowWidth = GetWindowWidth();
+
+  let mapWidth = "400px";
 
   useEffect(() => {
     if (mapInstanceRef.current) return; // Prevent re-initialization
@@ -79,7 +83,7 @@ function MapComponent({ zipCode, submit, setSubmit }) {
         style={{
           height: "100%",
           width: "100%",
-          minHeight: "400px",
+          minHeight: mapWidth,
           position: "relative",
           zIndex: 0,
         }}
