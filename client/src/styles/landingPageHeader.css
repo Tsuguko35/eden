@@ -69,6 +69,20 @@
     background-color: rgba(255, 255, 255, 0.5);
 }
 
+#landingPageHeader > .wrapper > .header-text > a > svg{
+    width: 30px;
+    height: 30px;
+}
+
+#landingPageHeader > .wrapper > .header-text > a > svg *{
+    color: white;
+    transition: color 250ms ease-in-out;
+}
+
+#landingPageHeader > .wrapper > .header-text > a > svg:hover *{
+    color: whitesmoke;
+}
+
 #landingPageHeader > .wrapper > .header-text > .main-text::before, #landingPageHeader > .wrapper > .header-text > .main-text::after {
     content: '';
     position: absolute;

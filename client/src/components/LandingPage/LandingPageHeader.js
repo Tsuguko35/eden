@@ -1,6 +1,8 @@
 import React from "react";
 import "../../styles/landingPageHeader.css";
-import header_background from "../../assets/images/LandingPage/edenHeader.png";
+import header_background from "../../assets/images/LandingPage/edenHeader2.png";
+import { Link } from "react-router-dom";
+import * as FaIcons from "react-icons/fa";
 
 function LandingPageHeader() {
   return (
@@ -18,6 +20,14 @@ function LandingPageHeader() {
             Our website is under construction, but we are preparing something
             amazing and exciting for you. Please check back soon for updates.
           </div>
+          <Link
+            to={
+              "https://www.facebook.com/profile.php?id=61559487871453&notif_id=1715740572872671&notif_t=follower_invite&ref=notif"
+            }
+            target="_blank"
+          >
+            <FaIcons.FaFacebookSquare />
+          </Link>
         </div>
       </div>
     </div>
