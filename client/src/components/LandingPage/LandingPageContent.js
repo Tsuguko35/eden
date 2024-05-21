@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import "../../styles/landingPageContent.css";
 
 import company_details_image from "../../assets/images/LandingPage/image1.svg";
+
+import LoadingDot from "../../assets/svg/LoadingDot";
 
 import visual_1 from "../../assets/images/LandingPage/visual1.svg";
 import visual_2 from "../../assets/images/LandingPage/visual2.svg";
@@ -9,8 +11,17 @@ import visual_3 from "../../assets/images/LandingPage/visual3.svg";
 import { Link } from "react-router-dom";
 import InnovationCarousel from "../reusable/InnovationCarousel";
 import MembersCarousel from "../reusable/MembersCarousel";
+import MapComponent from "../reusable/MapComponent";
 
 function LandingPageContent() {
+  const [zipCode, setZipCode] = useState(null);
+  const [submit, setSubmit] = useState(false);
+
+  const findLocation = (e) => {
+    e.preventDefault();
+
+    setSubmit(true);
+  };
   return (
     <div id="landingPageContent" className="landingPageContent">
       <div className="wrapper">
@@ -102,6 +113,56 @@ function LandingPageContent() {
                 <p className="label">Can work everywhere</p>
               </div>
             </div>
+          </div>
+        </div>
+
+        <div className="quote-container">
+          <div className="title">Get Your Personalized Quote Today!</div>
+          <div className="desc">
+            Get competitive prices for your project or product by requesting a
+            quick quotation today!
+          </div>
+          <div className="action">
+            <Link>REQUEST FOR QUOTATION</Link>
+          </div>
+        </div>
+
+        <div className="line-details">
+          <div className="lines left">
+            <span className="secondary"></span>
+            <span className="dark"></span>
+          </div>
+        </div>
+
+        <div className="google-map">
+          <div className="map">
+            <div className="map-container">
+              <MapComponent
+                zipCode={zipCode}
+                submit={submit}
+                setSubmit={setSubmit}
+              />
+            </div>
+          </div>
+          <div className="input-container">
+            <p className="title">LET US KNOW WHERE YOU AT!</p>
+            <p className="desc">
+              Help us serve you better by providing your current location.
+              Simply let us know where you are, and we'll tailor our services to
+              meet your needs right where you are.
+            </p>
+            <form onSubmit={findLocation} className="input-group">
+              <input
+                type="text"
+                required
+                placeholder="Enter ZIP Code"
+                onChange={(e) => setZipCode(e.target.value)}
+                disabled={submit}
+              />
+              <button type="submit" disabled={submit}>
+                {submit ? <LoadingDot width={40} height={40} /> : "Locate"}
+              </button>
+            </form>
           </div>
         </div>
       </div>
