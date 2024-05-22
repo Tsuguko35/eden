@@ -12,6 +12,7 @@ import { Link } from "react-router-dom";
 import InnovationCarousel from "../reusable/InnovationCarousel";
 import MembersCarousel from "../reusable/MembersCarousel";
 import MapComponent from "../reusable/MapComponent";
+import MiniPortfolioCarousel from "../reusable/MiniPortfolioCarousel";
 
 function LandingPageContent() {
   const [zipCode, setZipCode] = useState(null);
@@ -89,8 +90,8 @@ function LandingPageContent() {
 
         <div className="line-details">
           <div className="lines left">
-            <span className="secondary"></span>
             <span className="dark"></span>
+            <span className="secondary"></span>
           </div>
         </div>
 
@@ -127,13 +128,6 @@ function LandingPageContent() {
           </div>
         </div>
 
-        <div className="line-details">
-          <div className="lines left">
-            <span className="secondary"></span>
-            <span className="dark"></span>
-          </div>
-        </div>
-
         <div className="google-map">
           <div className="map">
             <div className="map-container">
@@ -163,6 +157,32 @@ function LandingPageContent() {
                 {submit ? <LoadingDot width={40} height={40} /> : "Locate"}
               </button>
             </form>
+          </div>
+        </div>
+
+        <div className="line-details">
+          <div className="lines left">
+            <span className="dark"></span>
+            <span className="secondary"></span>
+          </div>
+        </div>
+
+        <div className="company-details withPadding">
+          <div className="details">
+            <p className="label">Our Portfolio Showcase</p>
+            <p className="title">Discover Excellence: Our Portfolio Unveiled</p>
+            <p className="description">
+              Embark on a journey of discovery as we unveil our portfolio of
+              excellence. Explore a curated collection showcasing our finest
+              achievements, innovative projects, and expertise, designed to
+              inspire and captivate.
+            </p>
+            <div className="action">
+              <Link>SHOW MORE</Link>
+            </div>
+          </div>
+          <div className="image carousel">
+            <MiniPortfolioCarousel />
           </div>
         </div>
       </div>

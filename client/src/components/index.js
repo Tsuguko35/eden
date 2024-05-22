@@ -4,6 +4,8 @@ import LandingPageContent from "./LandingPage/LandingPageContent";
 import InnovationCarousel from "./reusable/InnovationCarousel";
 import MembersCarousel from "./reusable/MembersCarousel";
 import MapComponent from "./reusable/MapComponent";
+import MiniPortfolioCarousel from "./reusable/MiniPortfolioCarousel";
+import Footer from "./Footer";
 
 export {
   NavBar,
@@ -12,4 +14,6 @@ export {
   InnovationCarousel,
   MembersCarousel,
   MapComponent,
+  MiniPortfolioCarousel,
+  Footer,
 };

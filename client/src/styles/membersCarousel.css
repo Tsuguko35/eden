@@ -3,6 +3,8 @@
     height: 100%;
     display: flex;
     justify-content: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 
 #membersCarousel > .wrapper{
@@ -87,6 +89,7 @@
     height: 9px;
     border-radius: 0;
     background: var(--label);
+    opacity: 0.5;
 }
 
 #membersCarousel .swiper-pagination-bullet-active{
@@ -94,6 +97,7 @@
     height: 9px;
     border-radius: 0;
     background: var(--primary);
+    opacity: 1;
 }
 
 @media only screen and (max-width: 1024px){

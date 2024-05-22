@@ -87,6 +87,10 @@
     object-fit: contain;
 }
 
+#landingPageContent > .wrapper > .company-details > .image.carousel{
+    padding-inline: 30px;
+}
+
 #landingPageContent > .wrapper > .innovations{
     width: 100%;
     padding: 50px 75px;

@@ -142,14 +142,16 @@
     }
 
     #landingPageHeader > .wrapper > .header-text > .sub-text{
-        font-size: 16px;
+        font-size: 35px;
     }
 }
 
 @media only screen and (max-width: 468px){
     #landingPageHeader > .wrapper > .header-text > .main-text{
-        font-size: 45px;
+        font-size: 56px;
     }
+
+    
 
     #landingPageHeader > .wrapper > .header-text > .main-text::before {
         width: 55px;
@@ -168,7 +170,11 @@
 
 @media only screen and (max-width: 375px){
     #landingPageHeader > .wrapper > .header-text > .main-text{
-        font-size: 40px;
+        font-size: 48px;
+    }
+
+    #landingPageHeader > .wrapper > .header-text > .sub-text{
+        font-size: 30px;
     }
 
     #landingPageHeader > .wrapper > .header-text > .main-text::before {
@@ -188,7 +194,10 @@
 
 @media only screen and (max-width: 374px){
     #landingPageHeader > .wrapper > .header-text > .main-text{
-        font-size: 32px;
-        
+        font-size: 38px;
+    }
+
+    #landingPageHeader > .wrapper > .header-text > .sub-text{
+        font-size: 25   px;
     }
 }
