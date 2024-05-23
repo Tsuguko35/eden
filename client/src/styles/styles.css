@@ -1,12 +1,5 @@
-@font-face {
-  font-family: "DM Serif";
-  src: url("../assets/fonts/DMSerif.ttf");
-}
-
-@font-face {
-  font-family: "Inter";
-  src: url("../assets/fonts/Inter.ttf");
-}
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 :root{
     --background: #FFFFFF;
