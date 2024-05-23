@@ -1,8 +1,11 @@
 import React from "react";
 import "../../styles/servicesContent.css";
 
+import { Link } from "react-router-dom";
+
 import * as SiIcons from "react-icons/si";
 import CircleMemberCarousel from "../reusable/CircleMemberCarousel";
+import ClientReviewsMini from "../reusable/ClientReviewsMini";
 
 function ServicesContent() {
   return (
@@ -168,6 +171,33 @@ function ServicesContent() {
 
         {/* Member Carousel */}
         <CircleMemberCarousel />
+
+        <div className="client-reviews">
+          <div className="client-reviews-container">
+            <div className="image">
+              <img
+                src="https://res.cloudinary.com/dkwgg59ur/image/upload/v1716503418/Eden_Files/Eden_Services/istjpnac5xeyamrdqpmw.webp"
+                alt="client-visual"
+              />
+            </div>
+            <div className="details-container">
+              <div className="text-content">
+                <p className="label">Our Portfolio</p>
+                <p className="title">Learn from our Clients</p>
+                <p className="desc">
+                  Discover how our home maintenance solutions have made a
+                  difference. Hear directly from our satisfied clients about
+                  their experiences and the results they've achieved with our
+                  services.
+                </p>
+                <Link>View More</Link>
+              </div>
+              <div className="carousel">
+                <ClientReviewsMini />
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

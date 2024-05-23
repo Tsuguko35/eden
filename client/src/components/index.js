@@ -10,6 +10,7 @@ import ServicesHeader from "./Services/ServicesHeader";
 import ServicesContent from "./Services/ServicesContent";
 import QuoteForm from "./reusable/QuoteForm";
 import CircleMemberCarousel from "./reusable/CircleMemberCarousel";
+import ClientReviewsMini from "./reusable/ClientReviewsMini";
 
 export {
   NavBar,
@@ -24,4 +25,5 @@ export {
   QuoteForm,
   ServicesContent,
   CircleMemberCarousel,
+  ClientReviewsMini,
 };
