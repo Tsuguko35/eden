@@ -1,7 +1,6 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { EffectCoverflow, Pagination, Navigation } from "swiper/modules";
-import image_1 from "../../assets/images/LandingPage/innovationImage1.svg";
+import { EffectCoverflow, Pagination } from "swiper/modules";
 
 import "../../styles/innovationCarousel.css";
 import "swiper/css";
@@ -10,6 +9,8 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 function InnovationCarousel() {
+  const image_1 =
+    "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716428239/Eden_Files/Eden_LandingPage/vqzpzhyoglkvgfminw9m.webp";
   return (
     <div id="innovationCarousel" className="innovationCarousel">
       <Swiper

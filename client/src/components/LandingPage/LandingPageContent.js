@@ -1,13 +1,8 @@
 import React, { useState } from "react";
 import "../../styles/landingPageContent.css";
 
-import company_details_image from "../../assets/images/LandingPage/image1.svg";
-
 import LoadingDot from "../../assets/svg/LoadingDot";
 
-import visual_1 from "../../assets/images/LandingPage/visual1.svg";
-import visual_2 from "../../assets/images/LandingPage/visual2.svg";
-import visual_3 from "../../assets/images/LandingPage/visual3.svg";
 import { Link } from "react-router-dom";
 import InnovationCarousel from "../reusable/InnovationCarousel";
 import MembersCarousel from "../reusable/MembersCarousel";
@@ -17,6 +12,13 @@ import MiniPortfolioCarousel from "../reusable/MiniPortfolioCarousel";
 function LandingPageContent() {
   const [zipCode, setZipCode] = useState(null);
   const [submit, setSubmit] = useState(false);
+
+  const visual_1 =
+    "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716428239/Eden_Files/Eden_LandingPage/agzzla8jqwtlimvcks6e.webp";
+  const visual_2 =
+    "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716428239/Eden_Files/Eden_LandingPage/i6qf0fdzdlbsd4mqhy7n.webp";
+  const visual_3 =
+    "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716428239/Eden_Files/Eden_LandingPage/huq11dgbm3pdrukqoapm.webp";
 
   const findLocation = (e) => {
     e.preventDefault();
@@ -50,7 +52,12 @@ function LandingPageContent() {
             </div>
           </div>
           <div className="image">
-            <img src={company_details_image} alt="" />
+            <img
+              src={
+                "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716428239/Eden_Files/Eden_LandingPage/trpulagsofuryxiuwawy.webp"
+              }
+              alt="Details Visual"
+            />
           </div>
         </div>
         <div className="innovations">

@@ -1,6 +1,5 @@
-import React, { useMemo, useState } from "react";
+import React, { useEffect, useState } from "react";
 import "../styles/navbar.css";
-import eden_logo from "../assets/images/LogoLong.png";
 import { Link, useLocation } from "react-router-dom";
 import { GetWindowWidth } from "../utils";
 
@@ -11,21 +10,35 @@ function NavBar() {
   const windowWidth = GetWindowWidth();
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
-  useMemo(() => {
+  useEffect(() => {
     setSidebarOpen(false);
   }, [location]);
   return (
     <nav id="navBar" className="navBar">
       <div className="wrapper">
-        <Link>
-          <img src={eden_logo} alt="" className="logo" />
+        <Link to={"/"}>
+          <img
+            src={
+              "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716425911/Eden_Files/d4bfdzjjfxte451baran.webp"
+            }
+            alt="Eden Logo"
+            className="logo"
+          />
         </Link>
         {windowWidth > 1024 && (
           <div className="navigation">
-            <Link className={`${location.pathname === "/" ? "active" : ""}`}>
+            <Link
+              className={`${location.pathname === "/" ? "active" : ""}`}
+              to={"/"}
+            >
               Home
             </Link>
-            <Link>Service</Link>
+            <Link
+              className={`${location.pathname === "/Services" ? "active" : ""}`}
+              to={"/Services"}
+            >
+              Service
+            </Link>
             <Link>Portfolio</Link>
             <Link>About</Link>
             <Link>Contact</Link>
@@ -45,10 +58,20 @@ function NavBar() {
               />
             </div>
             <div className={`navigation mobile ${sidebarOpen ? "open" : ""}`}>
-              <Link className={`${location.pathname === "/" ? "active" : ""}`}>
+              <Link
+                className={`${location.pathname === "/" ? "active" : ""}`}
+                to={"/"}
+              >
                 Home
               </Link>
-              <Link>Service</Link>
+              <Link
+                className={`${
+                  location.pathname === "/Services" ? "active" : ""
+                }`}
+                to={"/Services"}
+              >
+                Service
+              </Link>
               <Link>Portfolio</Link>
               <Link>About</Link>
               <Link>Contact</Link>

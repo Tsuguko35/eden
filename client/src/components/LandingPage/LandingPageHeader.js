@@ -1,8 +1,5 @@
 import React from "react";
 import "../../styles/landingPageHeader.css";
-import header_background from "../../assets/images/LandingPage/edenHeader2.png";
-import { Link } from "react-router-dom";
-import * as FaIcons from "react-icons/fa";
 
 function LandingPageHeader() {
   return (
@@ -11,7 +8,12 @@ function LandingPageHeader() {
         <div className="background">
           <div className="overlay"></div>
           <div className="image">
-            <img src={header_background} alt="" />
+            <img
+              src={
+                "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716425918/Eden_Files/Eden_LandingPage/b30jm4byocmpvivejtxb.webp"
+              }
+              alt="Feader Background"
+            />
           </div>
         </div>
         <div className="header-text">

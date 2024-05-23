@@ -1,12 +1,5 @@
-@font-face {
-  font-family: "DM Serif";
-  src: url("../assets/fonts/DMSerif.ttf");
-}
-
-@font-face {
-  font-family: "Inter";
-  src: url("../assets/fonts/Inter.ttf");
-}
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@100..900&display=swap');
 
 :root{
     --background: #FFFFFF;
@@ -18,6 +11,9 @@
     --accent-hover: #d3af5b;
     --label: #ABAEAD;
     --hero-overlay-dark: rgba(35, 35, 35, 0.25);
+    --hero-overlay-secondary: rgba(191, 162, 128, 0.62);
+    --hero-overlay-light: rgba(217, 217, 217, 0.6);
+    --hero-overlay-primary: rgba(26, 68, 67, 0.69);
 }
 
 /* Global */

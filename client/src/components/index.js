@@ -6,6 +6,10 @@ import MembersCarousel from "./reusable/MembersCarousel";
 import MapComponent from "./reusable/MapComponent";
 import MiniPortfolioCarousel from "./reusable/MiniPortfolioCarousel";
 import Footer from "./Footer";
+import ServicesHeader from "./Services/ServicesHeader";
+import ServicesContent from "./Services/ServicesContent";
+import QuoteForm from "./reusable/QuoteForm";
+import CircleMemberCarousel from "./reusable/CircleMemberCarousel";
 
 export {
   NavBar,
@@ -16,4 +20,8 @@ export {
   MapComponent,
   MiniPortfolioCarousel,
   Footer,
+  ServicesHeader,
+  QuoteForm,
+  ServicesContent,
+  CircleMemberCarousel,
 };

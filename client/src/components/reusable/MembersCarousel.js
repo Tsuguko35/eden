@@ -1,10 +1,8 @@
 import React from "react";
 import "../../styles/membersCarousel.css";
 
-import member_pic from "../../assets/images/LandingPage/memberPic.svg";
-
 import { Swiper, SwiperSlide } from "swiper/react";
-import { EffectCoverflow, Pagination, Navigation } from "swiper/modules";
+import { Pagination, Navigation } from "swiper/modules";
 import "../../styles/innovationCarousel.css";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
@@ -12,6 +10,8 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 function MembersCarousel() {
+  const member_pic =
+    "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716428239/Eden_Files/Eden_LandingPage/pqdoe1gcdmd30sjrq9dz.webp";
   return (
     <div id="membersCarousel" className="membersCarousel">
       <div className="wrapper">

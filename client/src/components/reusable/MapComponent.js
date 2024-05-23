@@ -1,10 +1,4 @@
-import React, {
-  useCallback,
-  useEffect,
-  useMemo,
-  useRef,
-  useState,
-} from "react";
+import React, { useEffect, useRef } from "react";
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
 
@@ -12,7 +6,6 @@ import "leaflet/dist/leaflet.css";
 import markerIcon from "leaflet/dist/images/marker-icon.png";
 import markerIcon2x from "leaflet/dist/images/marker-icon-2x.png";
 import markerShadow from "leaflet/dist/images/marker-shadow.png";
-import { GetWindowWidth } from "../../utils";
 
 // Fix the issue with missing marker icons
 const defaultIcon = L.icon({
@@ -29,7 +22,6 @@ const defaultIcon = L.icon({
 function MapComponent({ zipCode, submit, setSubmit }) {
   const mapContainerRef = useRef(null);
   const mapInstanceRef = useRef(null);
-  const windowWidth = GetWindowWidth();
 
   let mapWidth = "400px";
 

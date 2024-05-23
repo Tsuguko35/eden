@@ -1,5 +1,4 @@
 import React from "react";
-import logo from "../assets/images/LogoLong.png";
 import { Link } from "react-router-dom";
 import "../styles/footer.css";
 
@@ -12,7 +11,12 @@ function Footer() {
     <footer id="footer" className="footer">
       <div className="wrapper">
         <div className="logo">
-          <img src={logo} alt="" />
+          <img
+            src={
+              "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716425911/Eden_Files/d4bfdzjjfxte451baran.webp"
+            }
+            alt="Eden Logo"
+          />
         </div>
         <div className="footer-content">
           <div className="contacts">

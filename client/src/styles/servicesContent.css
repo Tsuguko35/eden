@@ -1,0 +1,341 @@
+#servicesContent{
+    width: 100%;
+    height: 100%;
+}
+
+#servicesContent > .wrapper{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#servicesContent > .wrapper > .corporate-clients,
+#servicesContent > .wrapper > .products-showcase > .product-showcase-content{
+    width: 100%;
+    max-width: 1536px;
+    padding: 100px;
+}
+
+#servicesContent > .wrapper > .corporate-clients{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+}
+
+#servicesContent > .wrapper > .corporate-clients > .title{
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#servicesContent > .wrapper > .corporate-clients > .clients{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 75px;
+}
+
+#servicesContent > .wrapper > .corporate-clients > .clients > .icon{
+    min-width: 48px;
+    min-height: 48px;
+    object-fit: contain;
+}
+
+#servicesContent > .wrapper > .products-showcase{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#servicesContent > .wrapper > .products-showcase > .background{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    max-height: 375px;
+}
+
+#servicesContent > .wrapper > .products-showcase > .background > .overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: var(--hero-overlay-light);
+    z-index: 0;
+}
+
+#servicesContent > .wrapper > .products-showcase > .background > img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+#servicesContent > .wrapper > .products-showcase > .product-showcase-content{
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+#servicesContent > .wrapper > .products-showcase > .product-showcase-content > .title{
+    position: relative;
+    padding: 20px 40px;
+    max-width: 540px;
+    text-align: center;
+    background-color: var(--hero-overlay-light);
+    color: var(--primary);
+    font-size: 38px;
+    font-weight: bold;
+}
+
+#servicesContent > .wrapper > .products-showcase > .product-showcase-content > .title::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    width: 65px;
+    height: 60px;
+    border-left: 15px solid var(--primary);
+    border-top: 15px solid var(--primary);
+}
+
+#servicesContent > .wrapper > .products-showcase > .product-showcase-content > .title::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    right: -5px;
+    width: 65px;
+    height: 60px;
+    border-right: 15px solid var(--primary);
+    border-bottom: 15px solid var(--primary);
+}
+
+#servicesContent > .wrapper > .products-showcase > .product-showcase-content > .product-introduction{
+    width: 100%;
+    max-width: 845px;
+    max-height: 375px;
+    border-radius: 15px;
+    padding: 20px;
+    gap: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--hero-overlay-primary);
+}
+
+#servicesContent > .wrapper > .products-showcase > .product-showcase-content > .product-introduction > .text-content,
+#servicesContent > .wrapper > .products-showcase > .product-showcase-content > .product-introduction > .image{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+#servicesContent > .wrapper > .products-showcase > .product-showcase-content > .product-introduction > .text-content > .title{
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 150%;
+}
+
+#servicesContent > .wrapper > .products-showcase > .product-showcase-content > .product-introduction > .text-content > .desc{
+    color: white;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 150%;
+}
+
+#servicesContent > .wrapper > .products-showcase > .product-showcase-content > .product-introduction > .image{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#servicesContent > .wrapper > .products-showcase > .product-showcase-content > .product-introduction > .image > img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+#servicesContent > .wrapper > .products-showcase > .product-showcase-content > .product-grid{
+    width: 100%;
+    padding: 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    gap: 20px;
+}
+
+#servicesContent > .wrapper > .products-showcase > .product-showcase-content > .product-grid > .product-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#servicesContent > .wrapper > .products-showcase > .product-showcase-content > .product-grid > .product-container > .product{
+    width: 100%;
+    max-width: 320px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: var(--hero-overlay-primary);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#servicesContent > .wrapper > .products-showcase > .product-showcase-content > .product-grid > .product-container > .product > .image{
+    width: 100%;
+    height: 50%;
+}
+
+#servicesContent > .wrapper > .products-showcase > .product-showcase-content > .product-grid > .product-container > .product > .image > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#servicesContent > .wrapper > .products-showcase > .product-showcase-content > .product-grid > .product-container > .product > .text-content{
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#servicesContent > .wrapper > .products-showcase > .product-showcase-content > .product-grid > .product-container > .product > .text-content > .title{
+    color: white;
+    font-weight: bold;
+}
+
+#servicesContent > .wrapper > .products-showcase > .product-showcase-content > .product-grid > .product-container > .product > .text-content > .desc{
+    color: white;
+    font-weight: 300;
+    line-height: 150%;
+}
+
+#servicesContent > .wrapper > .products-showcase > .product-showcase-content > .product-grid > .product-container > .product > .text-content > button{
+    width: 100%;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: white;
+    border: none;
+    color: var(--primary);
+    font-weight: 500;
+}
+
+@media only screen and (max-width: 1269px){
+    #servicesContent > .wrapper > .products-showcase > .product-showcase-content > .product-grid{
+        padding: 50px;
+    }
+}
+
+@media only screen and (max-width: 1024px){
+    #servicesContent > .wrapper > .products-showcase > .product-showcase-content > .product-grid{
+        padding: 0px;
+    }
+}
+
+@media only screen and (max-width: 1023px){
+    #servicesContent > .wrapper > .corporate-clients,
+    #servicesContent > .wrapper > .products-showcase > .product-showcase-content{
+    padding: 100px 50px;
+    }
+
+    #servicesContent > .wrapper > .products-showcase > .product-showcase-content > .product-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #servicesContent > .wrapper > .products-showcase > .product-showcase-content > .product-introduction{
+        max-height: none;
+    }
+
+    #servicesContent > .wrapper > .products-showcase > .product-showcase-content > .product-introduction{
+        flex-direction: column-reverse;
+    }
+
+    #servicesContent > .wrapper > .products-showcase > .product-showcase-content > .product-introduction > .text-content,
+    #servicesContent > .wrapper > .products-showcase > .product-showcase-content > .product-introduction > .image{
+        width: 100%;
+        height: 50%;
+    }
+
+    #servicesContent > .wrapper > .products-showcase > .product-showcase-content > .product-introduction > .image{
+        max-width: 300px;
+    }
+
+    #servicesContent > .wrapper > .products-showcase > .product-showcase-content > .product-introduction > .text-content{
+        padding-inline:50px;
+        padding-bottom: 50px;
+    }
+
+    #servicesContent > .wrapper > .products-showcase > .product-showcase-content > .product-introduction > .text-content > .title,
+    #servicesContent > .wrapper > .products-showcase > .product-showcase-content > .product-introduction > .text-content > .desc{
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    #servicesContent > .wrapper > .corporate-clients,
+    #servicesContent > .wrapper > .products-showcase > .product-showcase-content{
+    padding: 100px 20px;
+    }
+
+    #servicesContent > .wrapper > .products-showcase > .product-showcase-content > .product-introduction{
+        gap: 0;
+    }
+
+    #servicesContent > .wrapper > .products-showcase > .product-showcase-content > .title{
+        font-size: 32px;
+    }
+
+    #servicesContent > .wrapper > .products-showcase > .product-showcase-content > .title::before {
+        top: -5px;
+        left: -5px;
+        width: 65px;
+        height: 60px;
+        border-left: 12px solid var(--primary);
+        border-top: 12px solid var(--primary);
+    }
+    
+    #servicesContent > .wrapper > .products-showcase > .product-showcase-content > .title::after {
+        bottom: -5px;
+        right: -5px;
+        width: 65px;
+        height: 60px;
+        border-right: 12px solid var(--primary);
+        border-bottom: 12px solid var(--primary);
+    }
+}
+
+@media only screen and (max-width: 600px){
+    #servicesContent > .wrapper > .products-showcase > .product-showcase-content > .product-introduction > .text-content{
+        padding: 20px;
+    }
+
+    #servicesContent > .wrapper > .products-showcase > .product-showcase-content > .product-grid{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media only screen and (max-width: 375px){
+    #servicesContent > .wrapper > .products-showcase > .product-showcase-content > .product-introduction > .text-content{
+        padding: 0px;
+    }
+}
