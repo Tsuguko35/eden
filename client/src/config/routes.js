@@ -1,4 +1,4 @@
-import { LandingPage, Services } from "../pages";
+import { LandingPage, Portfolio, Services } from "../pages";
 
 const routes = [
   {
@@ -8,6 +8,10 @@ const routes = [
   {
     path: "/Services",
     component: <Services />,
+  },
+  {
+    path: "/Portfolio",
+    component: <Portfolio />,
   },
 ];
 export default routes;

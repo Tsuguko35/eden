@@ -39,7 +39,14 @@ function NavBar() {
             >
               Service
             </Link>
-            <Link>Portfolio</Link>
+            <Link
+              className={`${
+                location.pathname === "/Portfolio" ? "active" : ""
+              }`}
+              to={"/Portfolio"}
+            >
+              Portfolio
+            </Link>
             <Link>About</Link>
             <Link>Contact</Link>
             <button>GET A QUOTE</button>
@@ -72,7 +79,14 @@ function NavBar() {
               >
                 Service
               </Link>
-              <Link>Portfolio</Link>
+              <Link
+                className={`${
+                  location.pathname === "/Portfolio" ? "active" : ""
+                }`}
+                to={"/Portfolio"}
+              >
+                Portfolio
+              </Link>
               <Link>About</Link>
               <Link>Contact</Link>
               <button>GET A QUOTE</button>

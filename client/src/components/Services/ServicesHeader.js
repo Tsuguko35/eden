@@ -5,7 +5,7 @@ import QuoteForm from "../reusable/QuoteForm";
 
 function ServicesHeader() {
   return (
-    <div id="servicesHeader" className="servicesHeader">
+    <header id="servicesHeader" className="servicesHeader">
       <div className="wrapper">
         <div className="background">
           <div className="overlay"></div>
@@ -94,7 +94,7 @@ function ServicesHeader() {
           </div>
         </div>
       </div>
-    </div>
+    </header>
   );
 }
 

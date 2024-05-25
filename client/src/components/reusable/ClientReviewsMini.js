@@ -17,8 +17,11 @@ function ClientReviewsMini() {
           1060: {
             slidesPerView: 3,
           },
-          425: {
+          768: {
             slidesPerView: 2,
+          },
+          280: {
+            slidesPerView: 1,
           },
         }}
         className="swiper-container"

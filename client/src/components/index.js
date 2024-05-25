@@ -11,6 +11,9 @@ import ServicesContent from "./Services/ServicesContent";
 import QuoteForm from "./reusable/QuoteForm";
 import CircleMemberCarousel from "./reusable/CircleMemberCarousel";
 import ClientReviewsMini from "./reusable/ClientReviewsMini";
+import PortfolioHeader from "./Portfolio/PortfolioHeader";
+import PortfolioContent from "./Portfolio/PortfolioContent";
+import PortfolioGrid from "./Portfolio/PortfolioGrid";
 
 export {
   NavBar,
@@ -26,4 +29,7 @@ export {
   ServicesContent,
   CircleMemberCarousel,
   ClientReviewsMini,
+  PortfolioHeader,
+  PortfolioContent,
+  PortfolioGrid,
 };

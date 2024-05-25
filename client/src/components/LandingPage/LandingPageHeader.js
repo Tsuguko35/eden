@@ -3,7 +3,7 @@ import "../../styles/landingPageHeader.css";
 
 function LandingPageHeader() {
   return (
-    <div id="landingPageHeader" className="landingPageHeader">
+    <header id="landingPageHeader" className="landingPageHeader">
       <div className="wrapper">
         <div className="background">
           <div className="overlay"></div>
@@ -21,7 +21,7 @@ function LandingPageHeader() {
           <div className="sub-text">Home Solution</div>
         </div>
       </div>
-    </div>
+    </header>
   );
 }
 
