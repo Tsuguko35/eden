@@ -48,7 +48,7 @@ function LandingPageContent() {
               building a better, smarter, and more beautiful home.
             </p>
             <div className="action">
-              <Link>MORE ABOUT ME</Link>
+              <Link to={"/About"}>MORE ABOUT ME</Link>
             </div>
           </div>
           <div className="image">
@@ -131,7 +131,7 @@ function LandingPageContent() {
             quick quotation today!
           </div>
           <div className="action">
-            <Link>REQUEST FOR QUOTATION</Link>
+            <Link to={"/Services"}>REQUEST FOR QUOTATION</Link>
           </div>
         </div>
 
@@ -185,7 +185,7 @@ function LandingPageContent() {
               inspire and captivate.
             </p>
             <div className="action">
-              <Link>SHOW MORE</Link>
+              <Link to={"/Portfolio"}>SHOW MORE</Link>
             </div>
           </div>
           <div className="image carousel">

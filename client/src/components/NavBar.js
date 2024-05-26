@@ -34,7 +34,9 @@ function NavBar() {
               Home
             </Link>
             <Link
-              className={`${location.pathname === "/Services" ? "active" : ""}`}
+              className={`${
+                location.pathname.includes("/Services") ? "active" : ""
+              }`}
               to={"/Services"}
             >
               Service

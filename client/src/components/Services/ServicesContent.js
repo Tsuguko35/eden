@@ -55,6 +55,16 @@ function ServicesContent() {
             <div className="product-grid">
               <div className="product-container">
                 <div className="product">
+                  <div className="product-tag">
+                    <div className="background"></div>
+                    <div className="text-content">
+                      <div className="main">25%</div>
+                      <div className="sub">
+                        Less Energy, 10% More Light: Eco-power meets superior
+                        brightness.
+                      </div>
+                    </div>
+                  </div>
                   <div className="image">
                     <img
                       src="https://res.cloudinary.com/dkwgg59ur/image/upload/v1716444581/Eden_Files/Eden_Services/Products/kty8aodab7mrpn8b6dgz.webp"
@@ -67,12 +77,22 @@ function ServicesContent() {
                       Encompasses smart lighting solutions such as LED bulbs and
                       smart switches that offer remote...{" "}
                     </p>
-                    <button>Learn more</button>
+                    <Link to={`/Services/Products`}>Learn more</Link>
                   </div>
                 </div>
               </div>
               <div className="product-container">
                 <div className="product">
+                  <div className="product-tag">
+                    <div className="background"></div>
+                    <div className="text-content">
+                      <div className="main">20% - 30%</div>
+                      <div className="sub">
+                        More Efficient: Saves energy and water while keeping you
+                        cool.
+                      </div>
+                    </div>
+                  </div>
                   <div className="image">
                     <img
                       src="https://res.cloudinary.com/dkwgg59ur/image/upload/v1716444582/Eden_Files/Eden_Services/Products/y4sqbkaq9s5arajercsz.webp"
@@ -85,13 +105,22 @@ function ServicesContent() {
                       Comprises smart washers and dryers that optimize water and
                       energy use based on load size, providing....
                     </p>
-                    <button>Learn more</button>
+                    <Link to={`/Services/Products`}>Learn more</Link>
                   </div>
                 </div>
               </div>
 
               <div className="product-container">
                 <div className="product">
+                  <div className="product-tag">
+                    <div className="background"></div>
+                    <div className="text-content">
+                      <div className="main">50%</div>
+                      <div className="sub">
+                        cooler air & delivers overkill power.
+                      </div>
+                    </div>
+                  </div>
                   <div className="image">
                     <img
                       src="https://res.cloudinary.com/dkwgg59ur/image/upload/v1716444581/Eden_Files/Eden_Services/Products/bkzwncy0azuxajwnhwwc.webp"
@@ -104,13 +133,23 @@ function ServicesContent() {
                       Includes smart thermostats and energy-efficient air
                       conditioners designed to optimize indoor ...
                     </p>
-                    <button>Learn more</button>
+                    <Link to={`/Services/Products`}>Learn more</Link>
                   </div>
                 </div>
               </div>
 
               <div className="product-container">
                 <div className="product">
+                  <div className="product-tag">
+                    <div className="background"></div>
+                    <div className="text-content">
+                      <div className="main">10x Faster</div>
+                      <div className="sub">
+                        Blazes through dirt in record time.2. Cleans Up to 50
+                        Sq. Meters: Takes on messes, big or small.
+                      </div>
+                    </div>
+                  </div>
                   <div className="image">
                     <img
                       src="https://res.cloudinary.com/dkwgg59ur/image/upload/v1716444581/Eden_Files/Eden_Services/Products/pglasckhvsz6laklh0jx.webp"
@@ -123,13 +162,23 @@ function ServicesContent() {
                       Includes robotic vacuum cleaners that automate floor
                       cleaning with smart navigation and scheduling...
                     </p>
-                    <button>Learn more</button>
+                    <Link to={`/Services/Products`}>Learn more</Link>
                   </div>
                 </div>
               </div>
 
               <div className="product-container">
                 <div className="product">
+                  <div className="product-tag">
+                    <div className="background"></div>
+                    <div className="text-content">
+                      <div className="main">5%</div>
+                      <div className="sub">
+                        Green Machine: Powerful & efficient, good for you & the
+                        planet.
+                      </div>
+                    </div>
+                  </div>
                   <div className="image">
                     <img
                       src="https://res.cloudinary.com/dkwgg59ur/image/upload/v1716444582/Eden_Files/Eden_Services/Products/oopbyxyyribmn4u8wyqg.webp"
@@ -142,13 +191,20 @@ function ServicesContent() {
                       Features energy-efficient refrigerators, smart ovens, and
                       dishwashers that save energy and ...
                     </p>
-                    <button>Learn more</button>
+                    <Link to={`/Services/Products`}>Learn more</Link>
                   </div>
                 </div>
               </div>
 
               <div className="product-container">
                 <div className="product">
+                  <div className="product-tag">
+                    <div className="background"></div>
+                    <div className="text-content">
+                      <div className="main">20%</div>
+                      <div className="sub">Reduce your energy consumption</div>
+                    </div>
+                  </div>
                   <div className="image">
                     <img
                       src="https://res.cloudinary.com/dkwgg59ur/image/upload/v1716444582/Eden_Files/Eden_Services/Products/hys71a3ugaz5o40jpzqz.webp"
@@ -161,7 +217,7 @@ function ServicesContent() {
                       Involves smart plugs and power strips that allow
                       monitoring and remote control of connected...
                     </p>
-                    <button>Learn more</button>
+                    <Link to={`/Services/Products`}>Learn more</Link>
                   </div>
                 </div>
               </div>
@@ -190,7 +246,7 @@ function ServicesContent() {
                   their experiences and the results they've achieved with our
                   services.
                 </p>
-                <Link>View More</Link>
+                <Link to={"/Portfolio"}>View More</Link>
               </div>
               <div className="carousel">
                 <ClientReviewsMini />

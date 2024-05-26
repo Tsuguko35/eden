@@ -9,12 +9,15 @@
     --text: #232323;
     --accent: #F0C869;
     --accent-hover: #d3af5b;
+    --accent-2: #D6AE30;
+    --green-accent: #2EC1AC;
     --label: #ABAEAD;
     --hero-overlay-dark: rgba(35, 35, 35, 0.25);
     --hero-overlay-secondary: rgba(191, 162, 128, 0.62);
     --hero-overlay-light: rgba(217, 217, 217, 0.6);
     --hero-overlay-primary: rgba(26, 68, 67, 0.69);
     --faq-icon-bg: #F7F7FF;
+    --product-details-bg: #F4F5F7;
 }
 
 /* Global */

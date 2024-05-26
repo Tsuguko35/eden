@@ -1,4 +1,12 @@
-import { AboutUs, ContactUs, LandingPage, Portfolio, Services } from "../pages";
+import {
+  AboutUs,
+  ContactUs,
+  LandingPage,
+  Portfolio,
+  ProductShowcase,
+  Products,
+  Services,
+} from "../pages";
 
 const routes = [
   {
@@ -8,6 +16,14 @@ const routes = [
   {
     path: "/Services",
     component: <Services />,
+  },
+  {
+    path: "/Services/Products",
+    component: <Products />,
+  },
+  {
+    path: "/Services/Products/:productName",
+    component: <ProductShowcase />,
   },
   {
     path: "/Portfolio",

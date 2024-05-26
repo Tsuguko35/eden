@@ -37,9 +37,9 @@ function Footer() {
           <div className="nav-container">
             <div className="nav-list">
               <p className="title">Company</p>
-              <Link>About</Link>
-              <Link>Contact</Link>
-              <Link>Blogs</Link>
+              <Link to={"/About"}>About</Link>
+              <Link to={"/Contact"}>Contact</Link>
+              <Link to={"/Portfolio"}>Blogs</Link>
             </div>
             <div className="nav-list">
               <p className="title">Legal</p>

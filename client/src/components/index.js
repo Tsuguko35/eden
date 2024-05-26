@@ -19,6 +19,7 @@ import AboutUsContent from "./AboutUs/AboutUsContent";
 import ClientReviewsBig from "./reusable/ClientReviewsBig";
 import ContactUsContent from "./ContactUs/ContactUsContent";
 import Faq from "./reusable/Faq";
+import ProductsContent from "./Products/ProductsContent";
 
 export {
   NavBar,
@@ -42,4 +43,5 @@ export {
   ClientReviewsBig,
   ContactUsContent,
   Faq,
+  ProductsContent,
 };
