@@ -47,8 +47,18 @@ function NavBar() {
             >
               Portfolio
             </Link>
-            <Link>About</Link>
-            <Link>Contact</Link>
+            <Link
+              className={`${location.pathname === "/About" ? "active" : ""}`}
+              to={"/About"}
+            >
+              About
+            </Link>
+            <Link
+              className={`${location.pathname === "/Contact" ? "active" : ""}`}
+              to={"/Contact"}
+            >
+              Contact
+            </Link>
             <button>GET A QUOTE</button>
           </div>
         )}
@@ -87,8 +97,20 @@ function NavBar() {
               >
                 Portfolio
               </Link>
-              <Link>About</Link>
-              <Link>Contact</Link>
+              <Link
+                className={`${location.pathname === "/About" ? "active" : ""}`}
+                to={"/About"}
+              >
+                About
+              </Link>
+              <Link
+                className={`${
+                  location.pathname === "/Contact" ? "active" : ""
+                }`}
+                to={"/Contact"}
+              >
+                Contact
+              </Link>
               <button>GET A QUOTE</button>
             </div>
           </>

@@ -14,6 +14,11 @@ import ClientReviewsMini from "./reusable/ClientReviewsMini";
 import PortfolioHeader from "./Portfolio/PortfolioHeader";
 import PortfolioContent from "./Portfolio/PortfolioContent";
 import PortfolioGrid from "./Portfolio/PortfolioGrid";
+import AboutUsHeader from "./AboutUs/AboutUsHeader";
+import AboutUsContent from "./AboutUs/AboutUsContent";
+import ClientReviewsBig from "./reusable/ClientReviewsBig";
+import ContactUsContent from "./ContactUs/ContactUsContent";
+import Faq from "./reusable/Faq";
 
 export {
   NavBar,
@@ -32,4 +37,9 @@ export {
   PortfolioHeader,
   PortfolioContent,
   PortfolioGrid,
+  AboutUsHeader,
+  AboutUsContent,
+  ClientReviewsBig,
+  ContactUsContent,
+  Faq,
 };

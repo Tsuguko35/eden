@@ -1,4 +1,4 @@
-import { LandingPage, Portfolio, Services } from "../pages";
+import { AboutUs, ContactUs, LandingPage, Portfolio, Services } from "../pages";
 
 const routes = [
   {
@@ -12,6 +12,14 @@ const routes = [
   {
     path: "/Portfolio",
     component: <Portfolio />,
+  },
+  {
+    path: "/About",
+    component: <AboutUs />,
+  },
+  {
+    path: "/Contact",
+    component: <ContactUs />,
   },
 ];
 export default routes;
