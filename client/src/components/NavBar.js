@@ -1,20 +1,41 @@
 import React, { useEffect, useState } from "react";
 import "../styles/navbar.css";
-import { Link, useLocation } from "react-router-dom";
-import { GetWindowWidth } from "../utils";
+import { Link, useLocation, useNavigate } from "react-router-dom";
+import { GetWindowWidth, bottomNavItems } from "../utils";
 
 import { Sling as Hamburger } from "hamburger-react";
 
+import { MdKeyboardArrowDown } from "react-icons/md";
+
 function NavBar() {
+  const navigate = useNavigate();
   const location = useLocation();
   const windowWidth = GetWindowWidth();
   const [sidebarOpen, setSidebarOpen] = useState(false);
+  const [showHidden, setShowHidden] = useState(false);
+  const [hoveredNav, setHoveredNav] = useState("");
+  const navItems = bottomNavItems;
 
   useEffect(() => {
     setSidebarOpen(false);
   }, [location]);
+
+  const handleMouseEnter = (item) => {
+    setShowHidden(true);
+    setHoveredNav(item);
+  };
+
+  const redirectToPageContent = (target) => {
+    setShowHidden(false);
+    navigate(target);
+  };
+
   return (
-    <nav id="navBar" className="navBar">
+    <nav
+      id="navBar"
+      className="navBar"
+      onMouseLeave={() => setShowHidden(false)}
+    >
       <div className="wrapper">
         <Link to={"/"}>
           <img
@@ -30,6 +51,7 @@ function NavBar() {
             <Link
               className={`${location.pathname === "/" ? "active" : ""}`}
               to={"/"}
+              onMouseEnter={() => setShowHidden(false)}
             >
               Home
             </Link>
@@ -38,26 +60,30 @@ function NavBar() {
                 location.pathname.includes("/Services") ? "active" : ""
               }`}
               to={"/Services"}
+              onMouseEnter={() => handleMouseEnter("Services")}
             >
-              Service
+              Service <MdKeyboardArrowDown />
             </Link>
             <Link
               className={`${
                 location.pathname === "/Portfolio" ? "active" : ""
               }`}
               to={"/Portfolio"}
+              onMouseEnter={() => handleMouseEnter("Portfolio")}
             >
-              Portfolio
+              Portfolio <MdKeyboardArrowDown />
             </Link>
             <Link
               className={`${location.pathname === "/About" ? "active" : ""}`}
               to={"/About"}
+              onMouseEnter={() => handleMouseEnter("About")}
             >
-              About
+              About <MdKeyboardArrowDown />
             </Link>
             <Link
               className={`${location.pathname === "/Contact" ? "active" : ""}`}
               to={"/Contact"}
+              onMouseEnter={() => setShowHidden(false)}
             >
               Contact
             </Link>
@@ -117,6 +143,45 @@ function NavBar() {
             </div>
           </>
         )}
+      </div>
+      <div className={`hidden-nav ${showHidden ? "show" : ""}`}>
+        <div className="wrapper">
+          <div className="content-nav">
+            {showHidden &&
+              navItems
+                .filter((nav) => nav.title === hoveredNav)
+                .map((nav) => (
+                  <React.Fragment key={nav.title}>
+                    {nav.items.map((item, index) => (
+                      <div
+                        className="nav-item"
+                        key={index}
+                        onClick={() =>
+                          redirectToPageContent(item.serviceTarget)
+                        }
+                      >
+                        <div className="title">
+                          <img
+                            src={item.serviceIcon}
+                            alt=""
+                            draggable={false}
+                          />
+                          <p>{item.serviceName}</p>
+                        </div>
+                        <div className="desc">{item.serviceDesc}</div>
+                      </div>
+                    ))}
+                  </React.Fragment>
+                ))}
+          </div>
+          <div className="vertical-divider"></div>
+          <div className="quote-container">
+            <div className="quote">
+              <p>Transforming Houses into Homes with Innovative Solutions</p>
+              <Link>Get A Quote</Link>
+            </div>
+          </div>
+        </div>
       </div>
     </nav>
   );
