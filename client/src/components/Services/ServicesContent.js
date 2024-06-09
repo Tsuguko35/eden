@@ -3,7 +3,6 @@ import "../../styles/servicesContent.css";
 
 import { Link } from "react-router-dom";
 
-import * as SiIcons from "react-icons/si";
 import CircleMemberCarousel from "../reusable/CircleMemberCarousel";
 import ClientReviewsMini from "../reusable/ClientReviewsMini";
 
@@ -11,16 +10,6 @@ function ServicesContent() {
   return (
     <div id="servicesContent" className="servicesContent">
       <div className="wrapper">
-        <div className="corporate-clients">
-          <div className="title">Corporate Clients</div>
-          <div className="clients">
-            <SiIcons.SiMcdonalds className="icon" />
-            <SiIcons.SiWindows className="icon" />
-            <SiIcons.SiAccenture className="icon" />
-            <SiIcons.SiApple className="icon" />
-          </div>
-        </div>
-
         <div className="products-showcase">
           <div className="background">
             <div className="overlay"></div>
@@ -195,38 +184,12 @@ function ServicesContent() {
                   </div>
                 </div>
               </div>
-
-              <div className="product-container">
-                <div className="product">
-                  <div className="product-tag">
-                    <div className="background"></div>
-                    <div className="text-content">
-                      <div className="main">20%</div>
-                      <div className="sub">Reduce your energy consumption</div>
-                    </div>
-                  </div>
-                  <div className="image">
-                    <img
-                      src="https://res.cloudinary.com/dkwgg59ur/image/upload/v1716444582/Eden_Files/Eden_Services/Products/hys71a3ugaz5o40jpzqz.webp"
-                      alt="product"
-                    />
-                  </div>
-                  <div className="text-content">
-                    <p className="title">Energy Management</p>
-                    <p className="desc">
-                      Involves smart plugs and power strips that allow
-                      monitoring and remote control of connected...
-                    </p>
-                    <Link to={`/Services/Products`}>Learn more</Link>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </div>
 
         {/* Member Carousel */}
-        <CircleMemberCarousel />
+        {/* <CircleMemberCarousel /> */}
 
         <div id="_ClientReviews" className="client-reviews">
           <div className="client-reviews-container">

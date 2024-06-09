@@ -19,31 +19,7 @@
     padding: 100px;
 }
 
-#servicesContent > .wrapper > .corporate-clients{
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    align-items: center;
-}
 
-#servicesContent > .wrapper > .corporate-clients > .title{
-    text-align: center;
-    font-size: 24px;
-    font-weight: bold;
-}
-
-#servicesContent > .wrapper > .corporate-clients > .clients{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 75px;
-}
-
-#servicesContent > .wrapper > .corporate-clients > .clients > .icon{
-    min-width: 48px;
-    min-height: 48px;
-    object-fit: contain;
-}
 
 #servicesContent > .wrapper > .products-showcase{
     position: relative;
@@ -497,6 +473,8 @@
         padding: 20px;
     }
 }
+
+
 
 @media only screen and (max-width: 600px){
     #servicesContent > .wrapper > .products-showcase > .product-showcase-content > .product-introduction > .text-content{

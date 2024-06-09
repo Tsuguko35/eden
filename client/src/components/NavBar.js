@@ -6,6 +6,7 @@ import { GetWindowWidth, bottomNavItems } from "../utils";
 import { Sling as Hamburger } from "hamburger-react";
 
 import { MdKeyboardArrowDown } from "react-icons/md";
+import { MdArrowDropDown } from "react-icons/md";
 
 function NavBar() {
   const navigate = useNavigate();
@@ -30,12 +31,13 @@ function NavBar() {
     navigate(target);
   };
 
+  const resetState = () => {
+    setShowHidden(false);
+    setHoveredNav("");
+  };
+
   return (
-    <nav
-      id="navBar"
-      className="navBar"
-      onMouseLeave={() => setShowHidden(false)}
-    >
+    <nav id="navBar" className="navBar" onMouseLeave={() => resetState()}>
       <div className="wrapper">
         <Link to={"/"}>
           <img
@@ -51,7 +53,7 @@ function NavBar() {
             <Link
               className={`${location.pathname === "/" ? "active" : ""}`}
               to={"/"}
-              onMouseEnter={() => setShowHidden(false)}
+              onMouseEnter={() => resetState()}
             >
               Home
             </Link>
@@ -63,6 +65,13 @@ function NavBar() {
               onMouseEnter={() => handleMouseEnter("Services")}
             >
               Service <MdKeyboardArrowDown />
+              {/* <div
+                className={`bottom-icon ${
+                  hoveredNav === "Services" ? "show" : ""
+                }`}
+              >
+                <MdArrowDropDown />
+              </div> */}
             </Link>
             <Link
               className={`${
@@ -72,6 +81,13 @@ function NavBar() {
               onMouseEnter={() => handleMouseEnter("Portfolio")}
             >
               Portfolio <MdKeyboardArrowDown />
+              {/* <div
+                className={`bottom-icon ${
+                  hoveredNav === "Portfolio" ? "show" : ""
+                }`}
+              >
+                <MdArrowDropDown />
+              </div> */}
             </Link>
             <Link
               className={`${location.pathname === "/About" ? "active" : ""}`}
@@ -79,11 +95,18 @@ function NavBar() {
               onMouseEnter={() => handleMouseEnter("About")}
             >
               About <MdKeyboardArrowDown />
+              {/* <div
+                className={`bottom-icon ${
+                  hoveredNav === "About" ? "show" : ""
+                }`}
+              >
+                <MdArrowDropDown />
+              </div> */}
             </Link>
             <Link
               className={`${location.pathname === "/Contact" ? "active" : ""}`}
               to={"/Contact"}
-              onMouseEnter={() => setShowHidden(false)}
+              onMouseEnter={() => resetState()}
             >
               Contact
             </Link>
@@ -178,7 +201,9 @@ function NavBar() {
           <div className="quote-container">
             <div className="quote">
               <p>Transforming Houses into Homes with Innovative Solutions</p>
-              <Link>Get A Quote</Link>
+              <Link onClick={() => setShowHidden(false)} to={"/Services"}>
+                Get A Quote
+              </Link>
             </div>
           </div>
         </div>

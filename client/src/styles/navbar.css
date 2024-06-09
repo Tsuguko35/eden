@@ -109,6 +109,30 @@
     border-bottom: 1px var(--black);
 }
 
+/* #navBar > .wrapper > .navigation > a > .bottom-icon{
+    position: absolute;
+    top: 100%;
+    opacity: 0;
+    transform: translateY(-5px);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out 0.4s;
+    z-index: 100;
+}
+
+#navBar > .wrapper > .navigation > a > .bottom-icon.show{
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+#navBar > .wrapper > .navigation > a > .bottom-icon > svg{
+    width: 48px;
+    height: 48px;
+}
+
+#navBar > .wrapper > .navigation > a > .bottom-icon > svg *{
+    color: var(--primary);
+} */
+
 #navBar > .wrapper > .navigation > button{
     width: 188px;
     height: 40px;
@@ -133,10 +157,10 @@
     min-height: 300px;
     background-color: white;
     opacity: 0;
-    pointer-events: none;
     display: flex;
     justify-content: center;
-    z-index: 5;
+    z-index: 99;
+    pointer-events: none;
     box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2);
     transform: translateY(10px);
     transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out 0.4s;
@@ -183,6 +207,7 @@
     grid-template-columns: 1fr 1fr;
     gap: 20px;
     overflow-y: auto;
+    overscroll-behavior: contain;
 }
 
 #navBar > .hidden-nav > .wrapper > .content-nav > .nav-item{
@@ -270,6 +295,15 @@
 }
 
 
+@media only screen and (max-width: 1336px){
+    #navBar > .hidden-nav > .wrapper > .content-nav > .nav-item > .desc{
+        font-size: 14px;
+    }
+
+    #navBar > .hidden-nav > .wrapper > .content-nav > .nav-item > .title > p{
+        font-size: 16px;
+    }
+}
 
 @media only screen and (max-width: 768px){
     #navBar > .wrapper{

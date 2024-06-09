@@ -1,5 +1,6 @@
 import React from "react";
 import "../../styles/portfolioHeader.css";
+import * as SiIcons from "react-icons/si";
 
 function PortfolioHeader() {
   return (
@@ -19,6 +20,16 @@ function PortfolioHeader() {
             our comprehensive portfolio. From home maintenance to innovative
             solutions, explore how we've made a difference for our clients.
           </p>
+        </div>
+
+        <div className="corporate-clients">
+          <div className="title">Corporate Clients</div>
+          <div className="clients">
+            <SiIcons.SiMcdonalds className="icon" />
+            <SiIcons.SiWindows className="icon" />
+            <SiIcons.SiAccenture className="icon" />
+            <SiIcons.SiApple className="icon" />
+          </div>
         </div>
       </div>
     </header>
