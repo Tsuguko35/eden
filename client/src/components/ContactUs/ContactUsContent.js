@@ -1,11 +1,62 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import "../../styles/contactUsContent.css";
 
 import * as Io5Icons from "react-icons/io5";
 import { Link } from "react-router-dom";
 import Faq from "../reusable/Faq";
+import emailjs from "emailjs-com";
+import LoadingDot from "../../assets/svg/LoadingDot";
 
 function ContactUsContent() {
+  const form = useRef();
+  const [submit, setSubmit] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState(null);
+  const [formData, setFormData] = useState({
+    first_name: "",
+    last_name: "",
+    client_name: "",
+    client_email: "",
+    client_message: "",
+  });
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    setSubmit(true);
+    emailjs
+      .sendForm(
+        "service_53m9irt",
+        "template_49vboz9",
+        form.current,
+        "WoGf1WNfMJ8EmmN6d"
+      )
+      .then(
+        () => {
+          setSubmit(false);
+          setSubmitStatus("success");
+          setFormData({
+            first_name: "",
+            last_name: "",
+            client_name: "",
+            client_email: "",
+            client_message: "",
+          });
+          console.log("SUCCESS!");
+        },
+        (error) => {
+          setSubmit(false);
+          setSubmitStatus("error");
+          console.log("FAILED...", error.text);
+        }
+      );
+  };
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
   return (
     <div id="contactUsContent" className="contactUsContent">
       <div className="wrapper">
@@ -18,35 +69,71 @@ function ContactUsContent() {
               feedback, our team is ready to help. Reach out to us and we'll get
               back to you as soon as possible.
             </p>
-            <form>
+            <form ref={form} onSubmit={sendEmail}>
+              <input
+                type="text"
+                value={`${formData.first_name} ${formData.last_name}`}
+                name="client_name"
+                style={{ display: "none" }}
+              />
               <div className="inputs">
                 <div className="input-group two">
                   <div className="custom-input">
                     <p className="label">First Name</p>
-                    <input type="text" required />
+                    <input
+                      type="text"
+                      name="first_name"
+                      value={formData.first_name}
+                      onChange={handleChange}
+                      required
+                    />
                   </div>
                   <div className="custom-input">
                     <p className="label">Last Name</p>
-                    <input type="text" required />
+                    <input
+                      type="text"
+                      name="last_name"
+                      value={formData.last_name}
+                      onChange={handleChange}
+                      required
+                    />
                   </div>
                 </div>
 
                 <div className="input-group">
                   <div className="custom-input">
                     <p className="label">Email Address</p>
-                    <input type="email" required />
+                    <input
+                      type="email"
+                      name="client_email"
+                      value={formData.client_email}
+                      onChange={handleChange}
+                      required
+                    />
                   </div>
                 </div>
 
                 <div className="input-group">
                   <div className="custom-texarea">
                     <p className="label">Message (Optional)</p>
-                    <textarea></textarea>
+                    <textarea
+                      name="client_message"
+                      value={formData.client_message}
+                      onChange={handleChange}
+                    ></textarea>
                   </div>
                 </div>
 
                 <div className="submit-area">
-                  <button type="submit">Submit</button>
+                  {submitStatus === "success" && (
+                    <p className="success">Message sent!</p>
+                  )}
+                  {submitStatus === "error" && (
+                    <p className="error">Error! Try again.</p>
+                  )}
+                  <button type="submit">
+                    {submit ? <LoadingDot width={35} height={35} /> : "Submit"}
+                  </button>
                 </div>
               </div>
             </form>

@@ -107,11 +107,18 @@
 #contactUsContent > .wrapper > .contact-us-container > .form > form > .inputs > .submit-area{
     width: 100%;
     display: flex;
+    gap: 10px;
     justify-content: flex-end;
     align-items: center;
 }
 
 #contactUsContent > .wrapper > .contact-us-container > .form > form > .inputs > .submit-area > button{
+    width: 100%;
+    max-width: 130px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 10px 20px;
     color: white;
     background-color: var(--primary);
@@ -125,6 +132,30 @@
     color: var(--primary);
     background-color: white;
     border-color: var(--primary);
+}
+
+#contactUsContent > .wrapper > .contact-us-container > .form > form > .inputs > .submit-area > p {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+}
+
+#contactUsContent > .wrapper > .contact-us-container > .form > form > .inputs > .submit-area > p.success{
+    padding: 10px;
+    background-color: #c8f7c8;
+    border: 1px solid #93C572;
+    color: green;
+    border-radius: 3px;
+}
+
+#contactUsContent > .wrapper > .contact-us-container > .form > form > .inputs > .submit-area > p.error{
+    padding: 10px;
+    background-color: #F2D2D4;
+    border: 1px solid #FA5F55;
+    color: #FA5F55;
+    border-radius: 3px;
 }
 
 #contactUsContent > .wrapper > .contact-us-container > .contact-detials{
