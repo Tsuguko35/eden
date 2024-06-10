@@ -194,6 +194,7 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+    
 }
 
 #servicesContent > .wrapper > .products-showcase > .product-showcase-content > .product-grid > .product-container > .product > .text-content > .title{
@@ -205,6 +206,10 @@
     color: white;
     font-weight: 300;
     line-height: 150%;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 #servicesContent > .wrapper > .products-showcase > .product-showcase-content > .product-grid > .product-container > .product > .text-content > a{

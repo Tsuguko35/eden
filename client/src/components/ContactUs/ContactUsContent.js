@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import Faq from "../reusable/Faq";
 import emailjs from "emailjs-com";
 import LoadingDot from "../../assets/svg/LoadingDot";
+import CircleMemberCarousel from "../reusable/CircleMemberCarousel";
 
 function ContactUsContent() {
   const form = useRef();

@@ -56,20 +56,21 @@ function ServicesContent() {
                   </div>
                   <div className="image">
                     <img
-                      src="https://res.cloudinary.com/dkwgg59ur/image/upload/v1716444581/Eden_Files/Eden_Services/Products/kty8aodab7mrpn8b6dgz.webp"
+                      src="https://res.cloudinary.com/dkwgg59ur/image/upload/v1717977927/Eden_Files/Eden_Services/Products/uboahtlp7mzd5sbeffut.webp"
                       alt="product"
                     />
                   </div>
                   <div className="text-content">
-                    <p className="title">Lighting</p>
+                    <p className="title">Blown-in Insulation</p>
                     <p className="desc">
-                      Encompasses smart lighting solutions such as LED bulbs and
-                      smart switches that offer remote...{" "}
+                      insulation that is installed by blowing it into attics,
+                      walls, and other cavities. It is made of tiny particles of
                     </p>
                     <Link to={`/Services/Products`}>Learn more</Link>
                   </div>
                 </div>
               </div>
+
               <div className="product-container">
                 <div className="product">
                   <div className="product-tag">
@@ -84,15 +85,15 @@ function ServicesContent() {
                   </div>
                   <div className="image">
                     <img
-                      src="https://res.cloudinary.com/dkwgg59ur/image/upload/v1716444582/Eden_Files/Eden_Services/Products/y4sqbkaq9s5arajercsz.webp"
+                      src="https://res.cloudinary.com/dkwgg59ur/image/upload/v1716444581/Eden_Files/Eden_Services/Products/kty8aodab7mrpn8b6dgz.webp"
                       alt="product"
                     />
                   </div>
                   <div className="text-content">
-                    <p className="title">Laundry Efficient</p>
+                    <p className="title">LED Bulbs</p>
                     <p className="desc">
-                      Comprises smart washers and dryers that optimize water and
-                      energy use based on load size, providing....
+                      LED's are far more energy-efficient than traditional
+                      incandescent bulbs and fluorescent bulbs
                     </p>
                     <Link to={`/Services/Products`}>Learn more</Link>
                   </div>
@@ -117,10 +118,10 @@ function ServicesContent() {
                     />
                   </div>
                   <div className="text-content">
-                    <p className="title">Climate Control</p>
+                    <p className="title">HVAC Services</p>
                     <p className="desc">
-                      Includes smart thermostats and energy-efficient air
-                      conditioners designed to optimize indoor ...
+                      We offer a full range of services to keep your heating,
+                      ventilation, and air conditioning system running
                     </p>
                     <Link to={`/Services/Products`}>Learn more</Link>
                   </div>
@@ -141,15 +142,15 @@ function ServicesContent() {
                   </div>
                   <div className="image">
                     <img
-                      src="https://res.cloudinary.com/dkwgg59ur/image/upload/v1716444581/Eden_Files/Eden_Services/Products/pglasckhvsz6laklh0jx.webp"
+                      src="https://res.cloudinary.com/dkwgg59ur/image/upload/v1717977927/Eden_Files/Eden_Services/Products/qojmwl6yk4mwpd4xgekl.webp"
                       alt="product"
                     />
                   </div>
                   <div className="text-content">
-                    <p className="title">Home Cleaning</p>
+                    <p className="title">UVC Light Service</p>
                     <p className="desc">
-                      Includes robotic vacuum cleaners that automate floor
-                      cleaning with smart navigation and scheduling...
+                      UVC light technology offers a proven weapon in the fight
+                      against germs. Our UVC Disinfection Solutions
                     </p>
                     <Link to={`/Services/Products`}>Learn more</Link>
                   </div>
@@ -170,15 +171,15 @@ function ServicesContent() {
                   </div>
                   <div className="image">
                     <img
-                      src="https://res.cloudinary.com/dkwgg59ur/image/upload/v1716444582/Eden_Files/Eden_Services/Products/oopbyxyyribmn4u8wyqg.webp"
+                      src="https://res.cloudinary.com/dkwgg59ur/image/upload/v1717977927/Eden_Files/Eden_Services/Products/wckpuqcf8aj1cu8ccru9.webp"
                       alt="product"
                     />
                   </div>
                   <div className="text-content">
-                    <p className="title">Energy Efficient Kitchen Appliances</p>
+                    <p className="title">Ecostella</p>
                     <p className="desc">
-                      Features energy-efficient refrigerators, smart ovens, and
-                      dishwashers that save energy and ...
+                      Ecostella is a device designed to improve the efficiency
+                      of your existing HVAC system, specifically
                     </p>
                     <Link to={`/Services/Products`}>Learn more</Link>
                   </div>
