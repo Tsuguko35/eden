@@ -16,8 +16,41 @@
 }
 
 #productsContent > .wrapper > .title{
+    width: 100%;
     font-size: 24px;
     font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+}
+
+#productsContent > .wrapper .review-selection{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#productsContent > .wrapper .review-selection > p{
+    font-weight: 400;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#productsContent > .wrapper .review-selection > p:not(.badge):hover{
+    color: var(--primary);
+    text-decoration: underline;
+}
+
+#productsContent > .wrapper .review-selection > p.badge{
+    font-weight: bold;
+    color: white;
+    width: 25px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25px;
+    background-color: var(--accent);
+    border-radius: 50%;
 }
 
 #productsContent > .wrapper > .desc{
@@ -86,7 +119,7 @@
 }
 
 #productsContent > .wrapper > .product-grid > .product > .image{
-    height: 70%;
+    height: 60%;
     min-height: 300px;
     overflow: hidden;
 }
@@ -95,15 +128,11 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform 0.2s ease-in-out;
 }
 
-#productsContent > .wrapper > .product-grid > .product:hover > .image > img{
-    transform: scale(1.05);
-}
 
 #productsContent > .wrapper > .product-grid > .product > .product-detials{
-    height: 30%;
+    height: 40%;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -127,9 +156,31 @@
     color: var(--label);
 }
 
-#productsContent > .wrapper > .product-grid > .product > .product-detials > .price{
+/* #productsContent > .wrapper > .product-grid > .product > .product-detials > .price{
     font-size: 18px;
     font-weight: bold;
+} */
+
+#productsContent > .wrapper > .product-grid > .product > .product-detials > button{
+    width: 100%;
+    height: 50px;
+    cursor: pointer;
+    background-color: var(--accent);
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    transition: all 250ms ease-in-out;
+}
+
+#productsContent > .wrapper > .product-grid > .product > .product-detials > button:disabled{
+    background-color: var(--label);
+    color: var(--hero-overlay-light);
+    cursor: default;
+}
+
+#productsContent > .wrapper > .product-grid > .product > .product-detials > button:not(:disabled):hover{
+    background-color: var(--accent-hover);
 }
 
 @media only screen and (max-width: 1270px){
