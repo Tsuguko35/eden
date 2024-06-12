@@ -20,6 +20,12 @@ import ClientReviewsBig from "./reusable/ClientReviewsBig";
 import ContactUsContent from "./ContactUs/ContactUsContent";
 import Faq from "./reusable/Faq";
 import ProductsContent from "./Products/ProductsContent";
+import ProductQuoteContent from "./Products/ProductQuoteContent";
+import ProductQuoteForm from "./reusable/productQuoteForm";
+import BecomeADealerContent from "./BecomeDealer/BecomeADealerContent";
+import DealerTestimonyCarousel from "./reusable/DealerTestimonyCarousel";
+import BecomeDealerForm from "./reusable/BecomeDealerForm";
+import PrivacyPolicy from "./reusable/PrivacyPolicy";
 
 export {
   NavBar,
@@ -44,4 +50,10 @@ export {
   ContactUsContent,
   Faq,
   ProductsContent,
+  ProductQuoteContent,
+  ProductQuoteForm,
+  BecomeADealerContent,
+  DealerTestimonyCarousel,
+  BecomeDealerForm,
+  PrivacyPolicy,
 };

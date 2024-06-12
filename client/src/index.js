@@ -1,21 +1,51 @@
-import React from "react";
+import React, { useEffect } from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter, useLocation } from "react-router-dom";
+import "locomotive-scroll/locomotive-scroll.css";
 
 /* Import locomotive-scroll */
 import LocomotiveScroll from "locomotive-scroll";
 
-/* Locomotive scroll instance */
-const locomotiveScroll = new LocomotiveScroll();
-
 const ScrollToTop = () => {
   const { pathname } = useLocation();
 
-  React.useEffect(() => {
-    locomotiveScroll.scrollTo("top", { immediate: true }); // Scroll to the top of the page
+  useEffect(() => {
+    const scroll = new LocomotiveScroll({
+      el: document.querySelector("#main-container"),
+      smooth: true,
+      getDirection: true,
+      lerp: 0.1,
+      reloadOnContextChange: true,
+      multiplier: 1,
+      class: "ignore-scroll",
+      smartphone: {
+        smooth: true,
+      },
+      tablet: {
+        smooth: true,
+      },
+    });
+
+    // Event listener to prevent Locomotive Scroll from interfering with nested scrollable elements
+    const handleWheel = (e) => {
+      if (e.target.closest(".ignore-scroll")) {
+        e.stopPropagation();
+      }
+    };
+
+    document.addEventListener("wheel", handleWheel, { passive: true });
+
+    // Scroll to the top on pathname change
+    scroll.scrollTo("top", { immediate: true });
+
+    // Cleanup function to destroy Locomotive Scroll instance and remove event listener
+    return () => {
+      if (scroll) scroll.destroy();
+      document.removeEventListener("wheel", handleWheel);
+    };
   }, [pathname]);
 
   return null;

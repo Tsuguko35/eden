@@ -22,7 +22,7 @@ function ProductsContent() {
         <div className="title">
           <p>Our Lighting Product</p>
 
-          <Link className="review-selection">
+          <Link to={`/Services/Products/Quote`} className="review-selection">
             <p className="badge">{quotedServices.length}</p>
             <p>Review selection</p>
           </Link>
@@ -98,12 +98,18 @@ function ProductsContent() {
                       onClick={() => addService(service.name)}
                       disabled={quotedServices.includes(service.name)}
                     >
-                      Add to Quotation
+                      {quotedServices.includes(service.name) && "Added"}
+                      {!quotedServices.includes(service.name) &&
+                        "Add to Quotation"}
                     </button>
                   </div>
                 </div>
               ))}
         </div>
+        <Link to={`/Services/Products/Quote`} className="review-selection">
+          <p className="badge">{quotedServices.length}</p>
+          <p>Review selection</p>
+        </Link>
       </div>
     </div>
   );

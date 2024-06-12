@@ -1,8 +1,10 @@
 import {
   AboutUs,
+  BecomeADealer,
   ContactUs,
   LandingPage,
   Portfolio,
+  ProductQuote,
   ProductShowcase,
   Products,
   Services,
@@ -26,6 +28,10 @@ const routes = [
     component: <ProductShowcase />,
   },
   {
+    path: "/Services/Products/Quote",
+    component: <ProductQuote />,
+  },
+  {
     path: "/Portfolio",
     component: <Portfolio />,
   },
@@ -36,6 +42,10 @@ const routes = [
   {
     path: "/Contact",
     component: <ContactUs />,
+  },
+  {
+    path: "/BecomeADealer",
+    component: <BecomeADealer />,
   },
 ];
 export default routes;

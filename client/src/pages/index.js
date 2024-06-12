@@ -5,6 +5,8 @@ import AboutUs from "./AboutUs";
 import ContactUs from "./ContactUs";
 import Products from "./Products";
 import ProductShowcase from "./ProductShowcase";
+import ProductQuote from "./ProductQuote";
+import BecomeADealer from "./BecomeADealer";
 
 export {
   LandingPage,
@@ -14,4 +16,6 @@ export {
   ContactUs,
   Products,
   ProductShowcase,
+  ProductQuote,
+  BecomeADealer,
 };

@@ -110,6 +110,15 @@ function NavBar() {
             >
               Contact
             </Link>
+            <Link
+              className={`${
+                location.pathname === "/BecomeADealer" ? "active" : ""
+              }`}
+              to={"/BecomeADealer"}
+              onMouseEnter={() => resetState()}
+            >
+              Become a Dealer
+            </Link>
             <button>GET A QUOTE</button>
           </div>
         )}
@@ -162,6 +171,14 @@ function NavBar() {
               >
                 Contact
               </Link>
+              <Link
+                className={`${
+                  location.pathname === "/BecomeADealer" ? "active" : ""
+                }`}
+                to={"/BecomeADealer"}
+              >
+                Become a Dealer
+              </Link>
               <button>GET A QUOTE</button>
             </div>
           </>
@@ -169,7 +186,7 @@ function NavBar() {
       </div>
       <div className={`hidden-nav ${showHidden ? "show" : ""}`}>
         <div className="wrapper">
-          <div className="content-nav">
+          <div className="content-nav ignore-scroll">
             {showHidden &&
               navItems
                 .filter((nav) => nav.title === hoveredNav)

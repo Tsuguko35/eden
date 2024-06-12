@@ -10,13 +10,16 @@
     --accent: #F0C869;
     --accent-hover: #d3af5b;
     --accent-2: #D6AE30;
+    --accent-3: #24A0ED;
     --green-accent: #2EC1AC;
     --label: #ABAEAD;
     --hero-overlay-dark: rgba(35, 35, 35, 0.25);
     --hero-overlay-secondary: rgba(191, 162, 128, 0.62);
     --hero-overlay-light: rgba(217, 217, 217, 0.6);
     --hero-overlay-primary: rgba(26, 68, 67, 0.69);
+    --hero-overlay-primary-light: rgba(26, 68, 67, 0.4);
     --faq-icon-bg: #F7F7FF;
+    --card-bg: #F7F6FB;
     --product-details-bg: #F4F5F7;
 }
 
@@ -48,8 +51,8 @@ body {
 }
 
 *::-webkit-scrollbar{
-    width: 10px; 
-    height: 10px;
+    width: 6px; 
+    height: 6px;
 }
 
 *::-webkit-scrollbar-track{
@@ -60,6 +63,10 @@ body {
 *::-webkit-scrollbar-thumb{
     background-color: var(--secondary);
     border-radius: 20px;
+}
+
+input[type="checkbox"] {
+    accent-color: var(--primary);
 }
 
 .pages{

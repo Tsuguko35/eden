@@ -1,23 +1,55 @@
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import { routes } from "./config";
 import "./styles/styles.css";
-import { NavBar } from "./components";
+import { NavBar, PrivacyPolicy } from "./components";
 
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { ServicesQuotation } from "./context";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 function App() {
   const [quotedServices, setQuotedServices] = useState([]);
+  const [showPrivacyPolicy, setShowPrivacyPolicy] = useState(false);
+
+  const location = useLocation();
+
+  useEffect(() => {
+    setTimeout(() => {
+      const hash = location.hash;
+      if (hash) {
+        const element = document.getElementById(hash.substring(1));
+        if (element) {
+          const offset = 100;
+          const elementPosition = element.getBoundingClientRect().top;
+          const offsetPosition = elementPosition + window.pageYOffset - offset;
+
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: "smooth",
+          });
+        }
+      }
+    }, 300);
+  }, [location]);
+
   return (
-    <div>
+    <div id="main-container" data-scroll-container>
+      <PrivacyPolicy show={showPrivacyPolicy} setShow={setShowPrivacyPolicy} />
+
       {/* Nav Bar */}
       <NavBar />
 
       {/* Pages */}
-      <ServicesQuotation.Provider value={{ quotedServices, setQuotedServices }}>
+      <ServicesQuotation.Provider
+        value={{
+          quotedServices,
+          setQuotedServices,
+          showPrivacyPolicy,
+          setShowPrivacyPolicy,
+        }}
+      >
         <div className="pages">
           <Routes>
             {routes.map((route) => (
