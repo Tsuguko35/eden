@@ -19,6 +19,7 @@ function BecomeDealerForm() {
     client_company: "",
     client_position: "",
     client_message: "",
+    client_checked: false,
   });
 
   const sendEmail = (e) => {
@@ -26,10 +27,10 @@ function BecomeDealerForm() {
     setSubmit(true);
     emailjs
       .sendForm(
-        "service_53m9irt",
-        "template_mvhgvbl",
+        "service_3d5j188",
+        "template_w7l0h6k",
         form.current,
-        "WoGf1WNfMJ8EmmN6d"
+        "6cCRCqbZjJgu_1TAr"
       )
       .then(
         () => {
@@ -168,7 +169,17 @@ function BecomeDealerForm() {
         </div>
 
         <div className="checkbox-area">
-          <input type="checkbox" />
+          <input
+            type="checkbox"
+            required
+            checked={formData.client_checked}
+            onChange={() =>
+              setFormData({
+                ...formData,
+                client_checked: !formData.client_checked,
+              })
+            }
+          />
           <p>
             I have read and agree to{" "}
             <span

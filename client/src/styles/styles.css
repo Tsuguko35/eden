@@ -69,6 +69,23 @@ input[type="checkbox"] {
     accent-color: var(--primary);
 }
 
+/* Remove arrows in Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+/* Remove arrows in Chrome, Safari, and Edge */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Remove arrows in Internet Explorer 10+ */
+input[type="number"] {
+    -ms-appearance: textfield;
+}
+
 .pages{
     padding-top: 80px;
 }

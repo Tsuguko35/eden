@@ -123,7 +123,11 @@
     outline: none;
     background-color: var(--text);
     color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 14px;
+    cursor: pointer;
 }
 
 #footer > .wrapper > .footer-content > .news-letter-container > .news-letter > .note{

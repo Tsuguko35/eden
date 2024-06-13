@@ -7,6 +7,7 @@ import Products from "./Products";
 import ProductShowcase from "./ProductShowcase";
 import ProductQuote from "./ProductQuote";
 import BecomeADealer from "./BecomeADealer";
+import PortfolioShowcase from "./PortfolioShowcase";
 
 export {
   LandingPage,
@@ -18,4 +19,5 @@ export {
   ProductShowcase,
   ProductQuote,
   BecomeADealer,
+  PortfolioShowcase,
 };

@@ -26,6 +26,7 @@ import BecomeADealerContent from "./BecomeDealer/BecomeADealerContent";
 import DealerTestimonyCarousel from "./reusable/DealerTestimonyCarousel";
 import BecomeDealerForm from "./reusable/BecomeDealerForm";
 import PrivacyPolicy from "./reusable/PrivacyPolicy";
+import PortfolioShowcaseContent from "./Portfolio/PortfolioShowcaseContent";
 
 export {
   NavBar,
@@ -56,4 +57,5 @@ export {
   DealerTestimonyCarousel,
   BecomeDealerForm,
   PrivacyPolicy,
+  PortfolioShowcaseContent,
 };

@@ -27,7 +27,9 @@ function PortfolioGrid() {
                   <p>Refrigerator Efficiency Upgrade</p>
                   <p className="date">March 2023</p>
                 </div>
-                <Link>
+                <Link
+                  to={`/Portfolio/Showcase/Refrigerator Efficiency Upgrade`}
+                >
                   <GoIcons.GoArrowUpLeft />
                 </Link>
               </div>
@@ -42,7 +44,9 @@ function PortfolioGrid() {
                   <p>Refrigerator Efficiency Upgrade</p>
                   <p className="date">March 2023</p>
                 </div>
-                <Link>
+                <Link
+                  to={`/Portfolio/Showcase/Refrigerator Efficiency Upgrade`}
+                >
                   <GoIcons.GoArrowUpLeft />
                 </Link>
               </div>
@@ -57,7 +61,9 @@ function PortfolioGrid() {
                   <p>Refrigerator Efficiency Upgrade</p>
                   <p className="date">March 2023</p>
                 </div>
-                <Link>
+                <Link
+                  to={`/Portfolio/Showcase/Refrigerator Efficiency Upgrade`}
+                >
                   <GoIcons.GoArrowUpLeft />
                 </Link>
               </div>
@@ -72,7 +78,9 @@ function PortfolioGrid() {
                   <p>Refrigerator Efficiency Upgrade</p>
                   <p className="date">March 2023</p>
                 </div>
-                <Link>
+                <Link
+                  to={`/Portfolio/Showcase/Refrigerator Efficiency Upgrade`}
+                >
                   <GoIcons.GoArrowUpLeft />
                 </Link>
               </div>
@@ -87,7 +95,9 @@ function PortfolioGrid() {
                   <p>Refrigerator Efficiency Upgrade</p>
                   <p className="date">March 2023</p>
                 </div>
-                <Link>
+                <Link
+                  to={`/Portfolio/Showcase/Refrigerator Efficiency Upgrade`}
+                >
                   <GoIcons.GoArrowUpLeft />
                 </Link>
               </div>
@@ -102,7 +112,9 @@ function PortfolioGrid() {
                   <p>Refrigerator Efficiency Upgrade</p>
                   <p className="date">March 2023</p>
                 </div>
-                <Link>
+                <Link
+                  to={`/Portfolio/Showcase/Refrigerator Efficiency Upgrade`}
+                >
                   <GoIcons.GoArrowUpLeft />
                 </Link>
               </div>

@@ -1,12 +1,55 @@
-import React from "react";
+import React, { useContext, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import "../styles/footer.css";
 
 import * as BiIcons from "react-icons/bi";
 import * as RiIcons from "react-icons/ri";
 import * as MdIcons from "react-icons/md";
+import emailjs from "emailjs-com";
+import { ServicesQuotation } from "../context";
+import LoadingDot from "../assets/svg/LoadingDot";
 
 function Footer() {
+  const { setShowPrivacyPolicy } = useContext(ServicesQuotation);
+  const form = useRef();
+  const [submit, setSubmit] = useState(false);
+  const [formData, setFormData] = useState({
+    client_email: "",
+  });
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    setSubmit(true);
+    emailjs
+      .sendForm(
+        "service_3d5j188",
+        "template_xp51ayw",
+        form.current,
+        "6cCRCqbZjJgu_1TAr"
+      )
+      .then(
+        () => {
+          setSubmit(false);
+          setFormData({
+            client_email: "",
+          });
+          console.log("SUCCESS!");
+        },
+        (error) => {
+          setSubmit(false);
+          console.log("FAILED...", error.text);
+        }
+      );
+  };
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
   return (
     <footer id="footer" className="footer">
       <div className="wrapper">
@@ -23,11 +66,11 @@ function Footer() {
             <p className="title">Reach us</p>
             <div className="contact-group">
               <BiIcons.BiSolidPhoneCall />
-              <p className="info">913-228-4495</p>
+              <p className="info">(866) 847-7972</p>
             </div>
             <div className="contact-group">
               <RiIcons.RiMailFill />
-              <p className="info">info@gogenesissolar.com</p>
+              <p className="info">info@goedenhome.com</p>
             </div>
             <div className="contact-group">
               <MdIcons.MdLocationOn />
@@ -43,7 +86,9 @@ function Footer() {
             </div>
             <div className="nav-list">
               <p className="title">Legal</p>
-              <Link>Privacy Policy</Link>
+              <Link onClick={() => setShowPrivacyPolicy(true)}>
+                Privacy Policy
+              </Link>
               <Link>Terms & Services</Link>
               <Link>Terms of Use</Link>
               <Link>Refund Policy</Link>
@@ -61,14 +106,23 @@ function Footer() {
                 <p>Join Our</p>
                 <p>Newsletter</p>
               </div>
-              <form action="" onSubmit={(e) => e.preventDefault()}>
+              <form ref={form} onSubmit={sendEmail}>
                 <div className="input-group">
                   <input
                     type="email"
                     placeholder="Your email address"
+                    name="client_email"
+                    value={formData.client_email}
+                    onChange={handleChange}
                     required
                   />
-                  <button type="submit">Subscribe</button>
+                  <button type="submit">
+                    {submit ? (
+                      <LoadingDot width={30} height={30} />
+                    ) : (
+                      "Subscribe"
+                    )}
+                  </button>
                 </div>
               </form>
               <p className="note">

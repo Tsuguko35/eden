@@ -40,6 +40,22 @@ function ProductQuoteContent() {
 
         <div className="quote-checkout" data-scroll-section>
           <div data-scroll-section className="product-list ignore-scroll">
+            {services_list.some(
+              (services) => !quotedServices.includes(services.name)
+            ) && (
+              <React.Fragment>
+                {quotedServices.map((service) => (
+                  <div className="product">
+                    <div className="details">
+                      <p className="name">{service} </p>
+                    </div>
+                    <div className="action">
+                      <IoMdClose onClick={() => removeProduct(service)} />
+                    </div>
+                  </div>
+                ))}
+              </React.Fragment>
+            )}
             {quotedServices &&
               services_list
                 .filter((services) => quotedServices.includes(services.name))

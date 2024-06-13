@@ -4,6 +4,7 @@ import {
   ContactUs,
   LandingPage,
   Portfolio,
+  PortfolioShowcase,
   ProductQuote,
   ProductShowcase,
   Products,
@@ -34,6 +35,10 @@ const routes = [
   {
     path: "/Portfolio",
     component: <Portfolio />,
+  },
+  {
+    path: "/Portfolio/Showcase/:portfolioItem",
+    component: <PortfolioShowcase />,
   },
   {
     path: "/About",
