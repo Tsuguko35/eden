@@ -131,14 +131,14 @@ function AboutUsContent() {
                 />
                 <p>HOME EFFICIENCY</p>
               </a>
-              <a href="https://gogenesissolar.com/">
+              <a href="https://gogenesissolar.com/" target="_blank">
                 <img
                   src="https://gogenesissolar.com/assets/horizontal-21f5e869.png"
                   alt=""
                 />
                 <p>SOLAR SOLUTIONS</p>
               </a>
-              <a href="https://goarccorp.com/">
+              <a href="https://goarccorp.com/" target="_blank">
                 <img
                   src="https://res.cloudinary.com/dkwgg59ur/image/upload/v1716382912/ix9tfxvydepl6juho7jf.webp"
                   alt=""
