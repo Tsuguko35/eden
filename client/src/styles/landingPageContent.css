@@ -138,21 +138,31 @@
 #landingPageContent > .wrapper > .innovations > .container > .innovations-text > .label{
     color: var(--label);
     font-size: 22px;
-    text-align: end;
 }
 
 #landingPageContent > .wrapper > .innovations > .container > .innovations-text > .title{
     color: var(--text);
     font-size: 32px;
     font-weight: 600;
-    text-align: end;
 }
 
 #landingPageContent > .wrapper > .innovations > .container > .innovations-text > .description{
     color: var(--text);
     font-size: 18px;
     font-weight: 300;
-    text-align: end;
+}
+
+#landingPageContent > .wrapper > .innovations > .container > .innovations-text > div.description{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#landingPageContent > .wrapper > .innovations > .container > .innovations-text > .description > ul{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-left: 30px;
 }
 
 #landingPageContent > .wrapper > .line-details{
@@ -506,6 +516,10 @@
 
     #landingPageContent > .wrapper > .innovations > .container > .innovations-text > .description{
         text-align: center;
+    }
+
+    #landingPageContent > .wrapper > .innovations > .container > .innovations-text > div.description{
+        text-align: left;
     }
 
     #landingPageContent > .wrapper > .visuals-container > .container{

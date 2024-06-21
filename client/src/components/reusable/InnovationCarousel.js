@@ -10,7 +10,7 @@ import "swiper/css/navigation";
 
 function InnovationCarousel() {
   const image_1 =
-    "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716428239/Eden_Files/Eden_LandingPage/vqzpzhyoglkvgfminw9m.webp";
+    "https://res.cloudinary.com/dkwgg59ur/image/upload/v1718925126/Eden_Files/Eden_LandingPage/cajtt3texfqepgvxk91x.webp";
   return (
     <div id="innovationCarousel" className="innovationCarousel">
       <Swiper

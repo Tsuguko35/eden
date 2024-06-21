@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "../styles/navbar.css";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { GetWindowWidth, bottomNavItems } from "../utils";
@@ -12,14 +12,47 @@ function NavBar() {
   const navigate = useNavigate();
   const location = useLocation();
   const windowWidth = GetWindowWidth();
+  const [hide, setHide] = useState(false);
+  const prevScrollY = useRef(0);
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [showHidden, setShowHidden] = useState(false);
   const [hoveredNav, setHoveredNav] = useState("");
   const navItems = bottomNavItems;
 
   useEffect(() => {
+    if (sidebarOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [sidebarOpen]);
+
+  useEffect(() => {
     setSidebarOpen(false);
   }, [location]);
+
+  const handleScroll = () => {
+    const currentScrollY = window.scrollY;
+
+    if (currentScrollY > 300 && currentScrollY > prevScrollY.current) {
+      setHide(true);
+    } else {
+      setHide(false);
+    }
+
+    prevScrollY.current = currentScrollY;
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   const handleMouseEnter = (item) => {
     setShowHidden(true);
@@ -37,7 +70,11 @@ function NavBar() {
   };
 
   return (
-    <nav id="navBar" className="navBar" onMouseLeave={() => resetState()}>
+    <nav
+      id="navBar"
+      className={`navBar ${hide ? "hide" : ""}`}
+      onMouseLeave={() => resetState()}
+    >
       <div className="wrapper">
         <Link to={"/"}>
           <img
@@ -119,7 +156,9 @@ function NavBar() {
             >
               Become a Dealer
             </Link>
-            <button>GET A QUOTE</button>
+            <button onClick={() => navigate("/Services#_getQuote")}>
+              GET A QUOTE
+            </button>
           </div>
         )}
         {windowWidth <= 1024 && (
@@ -179,7 +218,9 @@ function NavBar() {
               >
                 Become a Dealer
               </Link>
-              <button>GET A QUOTE</button>
+              <button onClick={() => navigate("/Services#_getQuote")}>
+                GET A QUOTE
+              </button>
             </div>
           </>
         )}

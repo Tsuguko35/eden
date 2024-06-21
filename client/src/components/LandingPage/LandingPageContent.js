@@ -31,30 +31,21 @@ function LandingPageContent() {
         <div className="company-details withPadding">
           <div className="details">
             <p className="label">Who we are as a company</p>
-            <p className="title">
-              Transforming Houses into Homes with Innovative Solutions
-            </p>
+            <p className="title">EDEN as a Company</p>
             <p className="description">
-              At EDEN Home Solution, we are dedicated to transforming houses
-              into homes through innovative, high-quality solutions. With a
-              commitment to excellence, we offer a comprehensive range of
-              services designed to enhance the comfort, beauty, and
-              functionality of your living spaces. Our team of experienced
-              professionals is passionate about providing personalized solutions
-              that meet your unique needs and exceed your expectations. Whether
-              you're looking to renovate, upgrade, or completely redesign your
-              home, we are here to help you create the perfect sanctuary that
-              reflects your style and vision. Trust us to be your partner in
-              building a better, smarter, and more beautiful home.
+              Eden extends company’s mission by helping homeowners significantly
+              reduce energy consumption. We provide cutting-edge services such
+              as advanced residential HVAC systems, comprehensive insulation
+              solutions, and rage of energy saving packages.
             </p>
             <div className="action">
-              <Link to={"/About"}>MORE ABOUT ME</Link>
+              <Link to={"/About"}>MORE ABOUT US</Link>
             </div>
           </div>
           <div className="image">
             <img
               src={
-                "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716428239/Eden_Files/Eden_LandingPage/trpulagsofuryxiuwawy.webp"
+                "https://res.cloudinary.com/dkwgg59ur/image/upload/v1718924827/Eden_Files/Eden_LandingPage/jo7pootueejaxuiqa9k8.webp"
               }
               alt="Details Visual"
             />
@@ -67,21 +58,23 @@ function LandingPageContent() {
             </div>
             <div className="innovations-text">
               <p className="label">Spotlight on Excellence</p>
-              <p className="title">
-                Discover Our Top-Rated Innovations and Offerings
-              </p>
+              <p className="title">Why Energy Efficiency?</p>
               <p className="description">
-                At Eden, we take pride in delivering the finest solutions and
-                services that set the standard for quality and innovation. In
-                our "Spotlight on Excellence," we highlight our premier
-                offerings that exemplify our commitment to excellence. Each
-                featured product and service has been carefully selected to
-                showcase the best of what we offer, reflecting our dedication to
-                superior craftsmanship, cutting-edge technology, and exceptional
-                customer satisfaction. Explore these standout solutions and
-                discover how we can help transform your home into a haven of
-                comfort and style.
+                Because it benefits everyone, regardless of their circumstances,
+                and particularly in today ' s economic climate.
               </p>
+              <div className="description">
+                Major Components of Efficiency:
+                <ul>
+                  <li>HVAC Controls</li>
+                  <li>HVAC Maintenance</li>
+                  <li>Home Energy Monitoring</li>
+                  <li>Duct Sealing</li>
+                  <li>Insulation</li>
+                  <li>Certification</li>
+                  <li>Finance</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>

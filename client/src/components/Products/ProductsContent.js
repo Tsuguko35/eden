@@ -2,12 +2,13 @@ import React, { useContext, useState } from "react";
 import "../../styles/productsContent.css";
 import { Link } from "react-router-dom";
 import { ServicesQuotation } from "../../context";
-import { services } from "../../utils";
+import { services, services_description } from "../../utils";
 
 function ProductsContent() {
   const { quotedServices, setQuotedServices } = useContext(ServicesQuotation);
-  const [activeCategory, setActiveCategory] = useState("LED Bulb");
+  const [activeCategory, setActiveCategory] = useState("Essentials");
   const services_array = services;
+  const services_desc = services_description;
 
   const addService = (service) => {
     const currentServices = quotedServices;
@@ -19,62 +20,51 @@ function ProductsContent() {
   return (
     <div id="productsContent" className="productsContent">
       <div className="wrapper">
-        <div className="title">
-          <p>Our Lighting Product</p>
+        {services_desc
+          .filter((service) => service.id === activeCategory)
+          .map((service) => (
+            <React.Fragment key={service.title}>
+              <div className="title">
+                <p>{service.title}</p>
 
-          <Link to={`/Services/Products/Quote`} className="review-selection">
-            <p className="badge">{quotedServices.length}</p>
-            <p>Review selection</p>
-          </Link>
-        </div>
-        <p className="desc">
-          Cultivate the perfect light for every moment. Our lighting solutions
-          go beyond illumination, offering the ability to adjust color,
-          brightness, and even spectrums to match your needs. Integrate
-          seamlessly with your smart home for a truly personalized lighting
-          experience.
-        </p>
+                <Link
+                  to={`/Services/Products/Quote`}
+                  className="review-selection"
+                >
+                  <p className="badge">{quotedServices.length}</p>
+                  <p>Review selection</p>
+                </Link>
+              </div>
+              <p className="desc">{service.sub}</p>
+            </React.Fragment>
+          ))}
 
         <div className="categories-container">
           <p
             className={`category ${
-              activeCategory === "LED Bulb" ? "active" : ""
+              activeCategory === "Essentials" ? "active" : ""
             }`}
-            onClick={() => setActiveCategory("LED Bulb")}
+            onClick={() => setActiveCategory("Essentials")}
           >
-            LED Bulb
+            Essentials
           </p>
           <p
-            className={`category ${
-              activeCategory === "Blown-in Insulation" ? "active" : ""
-            }`}
-            onClick={() => setActiveCategory("Blown-in Insulation")}
+            className={`category ${activeCategory === "PRO" ? "active" : ""}`}
+            onClick={() => setActiveCategory("PRO")}
           >
-            Blown-in Insulation
+            PRO
           </p>
           <p
-            className={`category ${
-              activeCategory === "HVAC Services" ? "active" : ""
-            }`}
-            onClick={() => setActiveCategory("HVAC Services")}
+            className={`category ${activeCategory === "ELITE" ? "active" : ""}`}
+            onClick={() => setActiveCategory("ELITE")}
           >
-            HVAC Services
+            ELITE
           </p>
           <p
-            className={`category ${
-              activeCategory === "UVC Light Service" ? "active" : ""
-            }`}
-            onClick={() => setActiveCategory("UVC Light Service")}
+            className={`category ${activeCategory === "POWER" ? "active" : ""}`}
+            onClick={() => setActiveCategory("POWER")}
           >
-            UVC Light Service
-          </p>
-          <p
-            className={`category ${
-              activeCategory === "Ecostella" ? "active" : ""
-            }`}
-            onClick={() => setActiveCategory("Ecostella")}
-          >
-            Ecostella
+            POWER
           </p>
         </div>
 
@@ -93,7 +83,6 @@ function ProductsContent() {
                   </div>
                   <div className="product-detials">
                     <p className="name">{service.name}</p>
-                    <p className="label">{service.sub}</p>
                     <button
                       onClick={() => addService(service.name)}
                       disabled={quotedServices.includes(service.name)}

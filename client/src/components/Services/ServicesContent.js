@@ -22,22 +22,100 @@ function ServicesContent() {
             <p className="title">“Modern Problem Needs Modern Solution”</p>
 
             <div className="product-introduction">
-              <div className="text-content">
-                <p className="title">
-                  Experience Exceptional Home Maintenance and Solutions
-                </p>
-                <p className="desc">
-                  Our skilled professionals are dedicated to providing reliable,
-                  high-quality services to keep your home safe, comfortable, and
-                  well-maintained. Trust us to handle all your home repair and
-                  maintenance needs with excellence and care.
+              <div className="title">
+                <p className="main">PRODUCT & SERVICES</p>
+                <p className="sub">
+                  We offer a range of packages to choose from
                 </p>
               </div>
-              <div className="image">
-                <img
-                  src="https://res.cloudinary.com/dkwgg59ur/image/upload/v1716440343/Eden_Files/Eden_Services/fxzzrh3ibkbgupkzddd0.webp"
-                  alt="intro image"
-                />
+
+              <div className="service-details">
+                <div className="detail">
+                  <div className="icon">
+                    <img
+                      src="https://res.cloudinary.com/dkwgg59ur/image/upload/v1718925457/Eden_Files/Eden_Services/Icons/y2rzpdqfa3yhhokry1r1.webp"
+                      alt=""
+                    />
+                    <p className="title">Eden Essentials</p>
+                  </div>
+                  <div className="bullets">
+                    <ul>
+                      <li>Variable Fan Timing</li>
+                      <li>Intelligent Compressor Cycling</li>
+                      <li>Variable Fan Speed</li>
+                      <li>Full System Diagnosis</li>
+                      <li>Increase in Home Value of 5%</li>
+                      <li>Guaranteed 15-20% Offset in Energy</li>
+                      <li>Lifetime Warranties on Prime and APC</li>
+                    </ul>
+                  </div>
+                </div>
+                <div className="detail">
+                  <div className="icon">
+                    <img
+                      src="https://res.cloudinary.com/dkwgg59ur/image/upload/v1718925457/Eden_Files/Eden_Services/Icons/ou9wzgsj5xgruz4t83ph.webp"
+                      alt=""
+                    />
+                    <p className="title">Eden Pro</p>
+                  </div>
+                  <div className="bullets">
+                    <ul>
+                      <li>Variable Fan Timing</li>
+                      <li>Intelligent Compressor Cycling</li>
+                      <li>Variable Fan Speed</li>
+                      <li>Full System Diagnosis</li>
+                      <li>Increase in Home Value of 5%</li>
+                      <li>Guaranteed 15-20% Offset in Energy</li>
+                      <li>Lifetime Warranties on Prime and APC</li>
+                      <li>Anti-Oil Fouling</li>
+                      <li>Whole Home Energy Monitoring</li>
+                    </ul>
+                  </div>
+                </div>
+                <div className="detail">
+                  <div className="icon">
+                    <img
+                      src="https://res.cloudinary.com/dkwgg59ur/image/upload/v1718925457/Eden_Files/Eden_Services/Icons/ahvn8gjbrcmnp6nghnqx.webp"
+                      alt=""
+                    />
+                    <p className="title">Eden Elite</p>
+                  </div>
+                  <div className="bullets">
+                    <ul>
+                      <li>Variable Fan Timing</li>
+                      <li>Intelligent Compressor Cycling</li>
+                      <li>Variable Fan Speed</li>
+                      <li>Full System Diagnosis</li>
+                      <li>Increase in Home Value of 5%</li>
+                      <li>Guaranteed 23-35% Offset in Energy</li>
+                      <li>Anti-Oil Fouling</li>
+                      <li>Whole Home Energy Monitoring</li>
+                      <li>Seal Ductwork</li>
+                      <li>Indoor Air Quality</li>
+                    </ul>
+                  </div>
+                </div>
+                <div className="detail">
+                  <div className="icon">
+                    <img
+                      src="https://res.cloudinary.com/dkwgg59ur/image/upload/v1718925457/Eden_Files/Eden_Services/Icons/xjlcpu3taxgk1xovxqxz.webp"
+                      alt=""
+                    />
+                    <p className="title">Eden Power</p>
+                  </div>
+                  <div className="bullets">
+                    <ul>
+                      <li>Variable Fan Timing</li>
+                      <li>Intelligent Compressor Cycling</li>
+                      <li>Variable Fan Speed</li>
+                      <li>Full System Diagnosis</li>
+                      <li>Increase in Home Value of 5%</li>
+                      <li>Guaranteed 23-35% Offset in Energy</li>
+                      <li>Anti-Oil Fouling and System Protection</li>
+                      <li>Lifetime Warranties on Prime, APC, and SynCat360</li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -47,26 +125,23 @@ function ServicesContent() {
                   <div className="product-tag">
                     <div className="background"></div>
                     <div className="text-content">
-                      <div className="main">25%</div>
-                      <div className="sub">
-                        Less Energy, 10% More Light: Eco-power meets superior
-                        brightness.
-                      </div>
+                      <div className="main">15-20%</div>
+                      <div className="sub">Total blended energy offset</div>
                     </div>
                   </div>
                   <div className="image">
                     <img
-                      src="https://res.cloudinary.com/dkwgg59ur/image/upload/v1717977927/Eden_Files/Eden_Services/Products/uboahtlp7mzd5sbeffut.webp"
+                      src="https://res.cloudinary.com/dkwgg59ur/image/upload/v1718927536/Eden_Files/Eden_Services/Icons/obcweyfptddqvz8e82we.webp"
                       alt="product"
                     />
                   </div>
                   <div className="text-content">
-                    <p className="title">Blown-in Insulation</p>
+                    <p className="title">Level 1 Package ESSENTIALS</p>
                     <p className="desc">
                       insulation that is installed by blowing it into attics,
                       walls, and other cavities. It is made of tiny particles of
                     </p>
-                    <Link to={`/Services/Products`}>Learn more</Link>
+                    <Link to={`/Services/Products`}>View Service</Link>
                   </div>
                 </div>
               </div>
@@ -76,26 +151,23 @@ function ServicesContent() {
                   <div className="product-tag">
                     <div className="background"></div>
                     <div className="text-content">
-                      <div className="main">20% - 30%</div>
-                      <div className="sub">
-                        More Efficient: Saves energy and water while keeping you
-                        cool.
-                      </div>
+                      <div className="main">20-25%</div>
+                      <div className="sub">Total blended energy offset</div>
                     </div>
                   </div>
                   <div className="image">
                     <img
-                      src="https://res.cloudinary.com/dkwgg59ur/image/upload/v1716444581/Eden_Files/Eden_Services/Products/kty8aodab7mrpn8b6dgz.webp"
+                      src="https://res.cloudinary.com/dkwgg59ur/image/upload/v1718927511/Eden_Files/Eden_Services/Icons/l3dfuzxzp30xtghwc9qq.webp"
                       alt="product"
                     />
                   </div>
                   <div className="text-content">
-                    <p className="title">LED Bulbs</p>
+                    <p className="title">Level 2 Package PRO</p>
                     <p className="desc">
                       LED's are far more energy-efficient than traditional
                       incandescent bulbs and fluorescent bulbs
                     </p>
-                    <Link to={`/Services/Products`}>Learn more</Link>
+                    <Link to={`/Services/Products`}>View Service</Link>
                   </div>
                 </div>
               </div>
@@ -105,54 +177,23 @@ function ServicesContent() {
                   <div className="product-tag">
                     <div className="background"></div>
                     <div className="text-content">
-                      <div className="main">50%</div>
-                      <div className="sub">
-                        cooler air & delivers overkill power.
-                      </div>
+                      <div className="main">25-35%</div>
+                      <div className="sub">Total blended energy offset</div>
                     </div>
                   </div>
                   <div className="image">
                     <img
-                      src="https://res.cloudinary.com/dkwgg59ur/image/upload/v1716444581/Eden_Files/Eden_Services/Products/bkzwncy0azuxajwnhwwc.webp"
+                      src="https://res.cloudinary.com/dkwgg59ur/image/upload/v1718927511/Eden_Files/Eden_Services/Icons/zqkzlmmjvdi94qksrb64.webp"
                       alt="product"
                     />
                   </div>
                   <div className="text-content">
-                    <p className="title">HVAC Services</p>
-                    <p className="desc">
-                      We offer a full range of services to keep your heating,
-                      ventilation, and air conditioning system running
-                    </p>
-                    <Link to={`/Services/Products`}>Learn more</Link>
-                  </div>
-                </div>
-              </div>
-
-              <div className="product-container">
-                <div className="product">
-                  <div className="product-tag">
-                    <div className="background"></div>
-                    <div className="text-content">
-                      <div className="main">10x Faster</div>
-                      <div className="sub">
-                        Blazes through dirt in record time.2. Cleans Up to 50
-                        Sq. Meters: Takes on messes, big or small.
-                      </div>
-                    </div>
-                  </div>
-                  <div className="image">
-                    <img
-                      src="https://res.cloudinary.com/dkwgg59ur/image/upload/v1717977927/Eden_Files/Eden_Services/Products/qojmwl6yk4mwpd4xgekl.webp"
-                      alt="product"
-                    />
-                  </div>
-                  <div className="text-content">
-                    <p className="title">UVC Light Service</p>
+                    <p className="title">Level 3 Package ELITE</p>
                     <p className="desc">
                       UVC light technology offers a proven weapon in the fight
                       against germs. Our UVC Disinfection Solutions
                     </p>
-                    <Link to={`/Services/Products`}>Learn more</Link>
+                    <Link to={`/Services/Products`}>View Service</Link>
                   </div>
                 </div>
               </div>
@@ -162,26 +203,23 @@ function ServicesContent() {
                   <div className="product-tag">
                     <div className="background"></div>
                     <div className="text-content">
-                      <div className="main">5%</div>
-                      <div className="sub">
-                        Green Machine: Powerful & efficient, good for you & the
-                        planet.
-                      </div>
+                      <div className="main">20-25%</div>
+                      <div className="sub">Total blended energy offset</div>
                     </div>
                   </div>
                   <div className="image">
                     <img
-                      src="https://res.cloudinary.com/dkwgg59ur/image/upload/v1717977927/Eden_Files/Eden_Services/Products/wckpuqcf8aj1cu8ccru9.webp"
+                      src="https://res.cloudinary.com/dkwgg59ur/image/upload/v1718927512/Eden_Files/Eden_Services/Icons/i8eq5csf2il3ittvyxvw.webp"
                       alt="product"
                     />
                   </div>
                   <div className="text-content">
-                    <p className="title">Ecostella</p>
+                    <p className="title">POWER PACK</p>
                     <p className="desc">
                       Ecostella is a device designed to improve the efficiency
                       of your existing HVAC system, specifically
                     </p>
-                    <Link to={`/Services/Products`}>Learn more</Link>
+                    <Link to={`/Services/Products`}>View Service</Link>
                   </div>
                 </div>
               </div>

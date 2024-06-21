@@ -113,6 +113,46 @@ function AboutUsContent() {
           </div>
         </div>
 
+        <div className="hero primary no-max-height">
+          <div className="background"></div>
+          <div className="hero-content center">
+            <div className="title">
+              <p>More Opportunities Available!</p>
+              <p>
+                Eden is part of a larger vision, completing the trinity of home
+                services:
+              </p>
+            </div>
+            <div className="links">
+              <a href="https://goedenhome.com/">
+                <img
+                  src="https://res.cloudinary.com/dkwgg59ur/image/upload/v1716425911/Eden_Files/l9uixhlxzufl2d6bmcbk.webp"
+                  alt=""
+                />
+                <p>HOME EFFICIENCY</p>
+              </a>
+              <a href="https://gogenesissolar.com/">
+                <img
+                  src="https://gogenesissolar.com/assets/horizontal-21f5e869.png"
+                  alt=""
+                />
+                <p>SOLAR SOLUTIONS</p>
+              </a>
+              <a href="https://goarccorp.com/">
+                <img
+                  src="https://res.cloudinary.com/dkwgg59ur/image/upload/v1716382912/ix9tfxvydepl6juho7jf.webp"
+                  alt=""
+                />
+                <p>ROOFING & CONSTRUCTION</p>
+              </a>
+            </div>
+            <p className="desc">
+              The opportunity with us will continue to expand, offering new ways
+              to sell, recruit, and earn residual commissions.
+            </p>
+          </div>
+        </div>
+
         <div className="hero">
           <div className="background"></div>
           <div className="hero-content">
