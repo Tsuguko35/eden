@@ -96,12 +96,11 @@ function AboutUsContent() {
               <div className="label">Vice President of Dealer Relations</div>
 
               <div className="desc">
-                Meet William Beliles, our visionary CEO leading Genesis Solar
-                Power with a profound dedication to innovative and sustainable
-                energy solutions. His strategic vision drives our company to the
-                forefront of the solar energy industry, inspiring us to
-                revolutionize the energy landscape and deliver exceptional solar
-                power services to our customers
+                Bill Hicks oversees the development and maintenance of strategic
+                partnerships with dealers, ensuring effective communication and
+                mutual growth. He implements innovative strategies to enhance
+                dealer satisfaction and drive business performance, supporting
+                dealers with the tools and resources they need to succeed.
               </div>
             </div>
             <div className="image">

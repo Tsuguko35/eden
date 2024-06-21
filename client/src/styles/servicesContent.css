@@ -236,6 +236,7 @@
     max-width: 100px;
     max-height: 100px;
     object-fit: contain;
+    fill: var(--secondary);
 }
 
 #servicesContent > .wrapper > .products-showcase > .product-showcase-content > .product-grid > .product-container > .product > .text-content{

@@ -3,6 +3,7 @@ import "../../styles/clientReviewsMini.css";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
+import { user_reviews } from "../../utils";
 
 function ClientReviewsMini() {
   return (
@@ -26,108 +27,21 @@ function ClientReviewsMini() {
         }}
         className="swiper-container"
       >
-        <SwiperSlide>
-          <div className="card">
-            <div className="client-details">
-              <img
-                src="https://res.cloudinary.com/dkwgg59ur/image/upload/v1716423797/Arc_About/fgbo3ben3ohxyep2urhr.webp"
-                alt="client profile"
-              />
-              <p className="name">William Beliles</p>
+        {user_reviews.map((review, index) => (
+          <SwiperSlide key={index}>
+            <div className="card">
+              <div className="client-details">
+                <img
+                  src="https://res.cloudinary.com/dkwgg59ur/image/upload/v1718934361/Eden_Files/clbxd2qi5lsshrzf5bee.svg"
+                  alt="client profile"
+                />
+                <p className="name">{review.name}</p>
+              </div>
+              <p className="review">{review.review}</p>
+              <p className="date">{review.date}</p>
             </div>
-            <p className="review">
-              The team was professional and efficient. They transformed my home
-              with their maintenance solutions, and I couldn't be happier with
-              the results!
-            </p>
-            <p className="date">April 15, 2024</p>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="card">
-            <div className="client-details">
-              <img
-                src="https://res.cloudinary.com/dkwgg59ur/image/upload/v1716423797/Arc_About/fgbo3ben3ohxyep2urhr.webp"
-                alt="client profile"
-              />
-              <p className="name">William Beliles</p>
-            </div>
-            <p className="review">
-              The team was professional and efficient. They transformed my home
-              with their maintenance solutions, and I couldn't be happier with
-              the results!
-            </p>
-            <p className="date">April 15, 2024</p>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="card">
-            <div className="client-details">
-              <img
-                src="https://res.cloudinary.com/dkwgg59ur/image/upload/v1716423797/Arc_About/fgbo3ben3ohxyep2urhr.webp"
-                alt="client profile"
-              />
-              <p className="name">William Beliles</p>
-            </div>
-            <p className="review">
-              The team was professional and efficient. They transformed my home
-              with their maintenance solutions, and I couldn't be happier with
-              the results!
-            </p>
-            <p className="date">April 15, 2024</p>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="card">
-            <div className="client-details">
-              <img
-                src="https://res.cloudinary.com/dkwgg59ur/image/upload/v1716423797/Arc_About/fgbo3ben3ohxyep2urhr.webp"
-                alt="client profile"
-              />
-              <p className="name">William Beliles</p>
-            </div>
-            <p className="review">
-              The team was professional and efficient. They transformed my home
-              with their maintenance solutions, and I couldn't be happier with
-              the results!
-            </p>
-            <p className="date">April 15, 2024</p>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="card">
-            <div className="client-details">
-              <img
-                src="https://res.cloudinary.com/dkwgg59ur/image/upload/v1716423797/Arc_About/fgbo3ben3ohxyep2urhr.webp"
-                alt="client profile"
-              />
-              <p className="name">William Beliles</p>
-            </div>
-            <p className="review">
-              The team was professional and efficient. They transformed my home
-              with their maintenance solutions, and I couldn't be happier with
-              the results!
-            </p>
-            <p className="date">April 15, 2024</p>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="card">
-            <div className="client-details">
-              <img
-                src="https://res.cloudinary.com/dkwgg59ur/image/upload/v1716423797/Arc_About/fgbo3ben3ohxyep2urhr.webp"
-                alt="client profile"
-              />
-              <p className="name">William Beliles</p>
-            </div>
-            <p className="review">
-              The team was professional and efficient. They transformed my home
-              with their maintenance solutions, and I couldn't be happier with
-              the results!
-            </p>
-            <p className="date">April 15, 2024</p>
-          </div>
-        </SwiperSlide>
+          </SwiperSlide>
+        ))}
       </Swiper>
     </div>
   );

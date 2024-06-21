@@ -26,14 +26,6 @@ function ProductsContent() {
             <React.Fragment key={service.title}>
               <div className="title">
                 <p>{service.title}</p>
-
-                <Link
-                  to={`/Services/Products/Quote`}
-                  className="review-selection"
-                >
-                  <p className="badge">{quotedServices.length}</p>
-                  <p>Review selection</p>
-                </Link>
               </div>
               <p className="desc">{service.sub}</p>
             </React.Fragment>
@@ -83,22 +75,10 @@ function ProductsContent() {
                   </div>
                   <div className="product-detials">
                     <p className="name">{service.name}</p>
-                    <button
-                      onClick={() => addService(service.name)}
-                      disabled={quotedServices.includes(service.name)}
-                    >
-                      {quotedServices.includes(service.name) && "Added"}
-                      {!quotedServices.includes(service.name) &&
-                        "Add to Quotation"}
-                    </button>
                   </div>
                 </div>
               ))}
         </div>
-        <Link to={`/Services/Products/Quote`} className="review-selection">
-          <p className="badge">{quotedServices.length}</p>
-          <p>Review selection</p>
-        </Link>
       </div>
     </div>
   );

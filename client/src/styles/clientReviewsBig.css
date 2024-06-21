@@ -103,6 +103,10 @@
 #clientReviewsBig .card > .review{
     font-size: 20px;
     font-weight: 300;
+    display: -webkit-box;
+    -webkit-line-clamp: 7;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 #clientReviewsBig .swiper-pagination-bullet{

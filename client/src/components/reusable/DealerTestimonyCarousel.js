@@ -2,6 +2,7 @@ import React from "react";
 import "../../styles/dealerTestimonyCarousel.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
+import { dealer_reviews } from "../../utils";
 
 function DealerTestimonyCarousel() {
   return (
@@ -30,162 +31,26 @@ function DealerTestimonyCarousel() {
         }}
         className="swiper-container"
       >
-        <SwiperSlide>
-          <div className="card">
-            <div className="image">
-              <img
-                src="https://res.cloudinary.com/dkwgg59ur/image/upload/v1716423797/Arc_About/fgbo3ben3ohxyep2urhr.webp"
-                alt="client profile"
-              />
-            </div>
-            <div className="review">
-              <div className="client-details">
-                <p className="name">William Beliles</p>
-                <p className="role">
-                  Regional Director - Suncoast Distributors
-                </p>
+        {dealer_reviews.map((review, index) => (
+          <SwiperSlide key={index}>
+            <div className="card">
+              <div className="image">
+                <img
+                  src="https://res.cloudinary.com/dkwgg59ur/image/upload/v1718934361/Eden_Files/clbxd2qi5lsshrzf5bee.svg"
+                  alt="client profile"
+                />
               </div>
-              <p className="review-text">
-                "We were impressed with EDEN’s commitment to building strong
-                partnerships. Their dedicated account manager ensures we have
-                everything we need to succeed, from product knowledge to
-                marketing strategies. We're excited to continue this mutually
-                beneficial partnership."
-              </p>
-              <p className="date">April 15, 2024</p>
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="card">
-            <div className="image">
-              <img
-                src="https://res.cloudinary.com/dkwgg59ur/image/upload/v1716423797/Arc_About/fgbo3ben3ohxyep2urhr.webp"
-                alt="client profile"
-              />
-            </div>
-            <div className="review">
-              <div className="client-details">
-                <p className="name">William Beliles</p>
-                <p className="role">
-                  Regional Director - Suncoast Distributors
-                </p>
+              <div className="review">
+                <div className="client-details">
+                  <p className="name">{review.dealer}</p>
+                  <p className="role">{review.position}</p>
+                </div>
+                <p className="review-text">{review.review}</p>
+                <p className="date">{review.date}</p>
               </div>
-              <p className="review-text">
-                "We were impressed with EDEN’s commitment to building strong
-                partnerships. Their dedicated account manager ensures we have
-                everything we need to succeed, from product knowledge to
-                marketing strategies. We're excited to continue this mutually
-                beneficial partnership."
-              </p>
-              <p className="date">April 15, 2024</p>
             </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="card">
-            <div className="image">
-              <img
-                src="https://res.cloudinary.com/dkwgg59ur/image/upload/v1716423797/Arc_About/fgbo3ben3ohxyep2urhr.webp"
-                alt="client profile"
-              />
-            </div>
-            <div className="review">
-              <div className="client-details">
-                <p className="name">William Beliles</p>
-                <p className="role">
-                  Regional Director - Suncoast Distributors
-                </p>
-              </div>
-              <p className="review-text">
-                "We were impressed with EDEN’s commitment to building strong
-                partnerships. Their dedicated account manager ensures we have
-                everything we need to succeed, from product knowledge to
-                marketing strategies. We're excited to continue this mutually
-                beneficial partnership."
-              </p>
-              <p className="date">April 15, 2024</p>
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="card">
-            <div className="image">
-              <img
-                src="https://res.cloudinary.com/dkwgg59ur/image/upload/v1716423797/Arc_About/fgbo3ben3ohxyep2urhr.webp"
-                alt="client profile"
-              />
-            </div>
-            <div className="review">
-              <div className="client-details">
-                <p className="name">William Beliles</p>
-                <p className="role">
-                  Regional Director - Suncoast Distributors
-                </p>
-              </div>
-              <p className="review-text">
-                "We were impressed with EDEN’s commitment to building strong
-                partnerships. Their dedicated account manager ensures we have
-                everything we need to succeed, from product knowledge to
-                marketing strategies. We're excited to continue this mutually
-                beneficial partnership."
-              </p>
-              <p className="date">April 15, 2024</p>
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="card">
-            <div className="image">
-              <img
-                src="https://res.cloudinary.com/dkwgg59ur/image/upload/v1716423797/Arc_About/fgbo3ben3ohxyep2urhr.webp"
-                alt="client profile"
-              />
-            </div>
-            <div className="review">
-              <div className="client-details">
-                <p className="name">William Beliles</p>
-                <p className="role">
-                  Regional Director - Suncoast Distributors
-                </p>
-              </div>
-              <p className="review-text">
-                "We were impressed with EDEN’s commitment to building strong
-                partnerships. Their dedicated account manager ensures we have
-                everything we need to succeed, from product knowledge to
-                marketing strategies. We're excited to continue this mutually
-                beneficial partnership."
-              </p>
-              <p className="date">April 15, 2024</p>
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="card">
-            <div className="image">
-              <img
-                src="https://res.cloudinary.com/dkwgg59ur/image/upload/v1716423797/Arc_About/fgbo3ben3ohxyep2urhr.webp"
-                alt="client profile"
-              />
-            </div>
-            <div className="review">
-              <div className="client-details">
-                <p className="name">William Beliles</p>
-                <p className="role">
-                  Regional Director - Suncoast Distributors
-                </p>
-              </div>
-              <p className="review-text">
-                "We were impressed with EDEN’s commitment to building strong
-                partnerships. Their dedicated account manager ensures we have
-                everything we need to succeed, from product knowledge to
-                marketing strategies. We're excited to continue this mutually
-                beneficial partnership."
-              </p>
-              <p className="date">April 15, 2024</p>
-            </div>
-          </div>
-        </SwiperSlide>
+          </SwiperSlide>
+        ))}
       </Swiper>
     </div>
   );

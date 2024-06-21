@@ -5,6 +5,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
+import { user_reviews } from "../../utils";
 
 function ClientReviewsBig() {
   return (
@@ -34,114 +35,22 @@ function ClientReviewsBig() {
         }}
         className="swiper-container"
       >
-        <SwiperSlide>
-          <div className="card">
-            <div className="client-detials">
-              <img
-                src="https://res.cloudinary.com/dkwgg59ur/image/upload/v1716423797/Arc_About/fgbo3ben3ohxyep2urhr.webp"
-                alt="client profile"
-              />
-              <div className="details">
-                <p className="name">William Beliles</p>
-                <p className="location">California, USA</p>
+        {user_reviews.map((review, index) => (
+          <SwiperSlide key={index}>
+            <div className="card">
+              <div className="client-detials">
+                <img
+                  src="https://res.cloudinary.com/dkwgg59ur/image/upload/v1718934361/Eden_Files/clbxd2qi5lsshrzf5bee.svg"
+                  alt="client profile"
+                />
+                <div className="details">
+                  <p className="name">{review.name}</p>
+                </div>
               </div>
+              <p className="review">{review.review}</p>
             </div>
-            <p className="review">
-              Lorem Ipsum is simply dummy text of the typesetting industry.
-              Ipsum has been scrambled it to make a type book.
-            </p>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="card">
-            <div className="client-detials">
-              <img
-                src="https://res.cloudinary.com/dkwgg59ur/image/upload/v1716423797/Arc_About/fgbo3ben3ohxyep2urhr.webp"
-                alt="client profile"
-              />
-              <div className="details">
-                <p className="name">William Beliles</p>
-                <p className="location">California, USA</p>
-              </div>
-            </div>
-            <p className="review">
-              Lorem Ipsum is simply dummy text of the typesetting industry.
-              Ipsum has been scrambled it to make a type book.
-            </p>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="card">
-            <div className="client-detials">
-              <img
-                src="https://res.cloudinary.com/dkwgg59ur/image/upload/v1716423797/Arc_About/fgbo3ben3ohxyep2urhr.webp"
-                alt="client profile"
-              />
-              <div className="details">
-                <p className="name">William Beliles</p>
-                <p className="location">California, USA</p>
-              </div>
-            </div>
-            <p className="review">
-              Lorem Ipsum is simply dummy text of the typesetting industry.
-              Ipsum has been scrambled it to make a type book.
-            </p>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="card">
-            <div className="client-detials">
-              <img
-                src="https://res.cloudinary.com/dkwgg59ur/image/upload/v1716423797/Arc_About/fgbo3ben3ohxyep2urhr.webp"
-                alt="client profile"
-              />
-              <div className="details">
-                <p className="name">William Beliles</p>
-                <p className="location">California, USA</p>
-              </div>
-            </div>
-            <p className="review">
-              Lorem Ipsum is simply dummy text of the typesetting industry.
-              Ipsum has been scrambled it to make a type book.
-            </p>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="card">
-            <div className="client-detials">
-              <img
-                src="https://res.cloudinary.com/dkwgg59ur/image/upload/v1716423797/Arc_About/fgbo3ben3ohxyep2urhr.webp"
-                alt="client profile"
-              />
-              <div className="details">
-                <p className="name">William Beliles</p>
-                <p className="location">California, USA</p>
-              </div>
-            </div>
-            <p className="review">
-              Lorem Ipsum is simply dummy text of the typesetting industry.
-              Ipsum has been scrambled it to make a type book.
-            </p>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="card">
-            <div className="client-detials">
-              <img
-                src="https://res.cloudinary.com/dkwgg59ur/image/upload/v1716423797/Arc_About/fgbo3ben3ohxyep2urhr.webp"
-                alt="client profile"
-              />
-              <div className="details">
-                <p className="name">William Beliles</p>
-                <p className="location">California, USA</p>
-              </div>
-            </div>
-            <p className="review">
-              Lorem Ipsum is simply dummy text of the typesetting industry.
-              Ipsum has been scrambled it to make a type book.
-            </p>
-          </div>
-        </SwiperSlide>
+          </SwiperSlide>
+        ))}
       </Swiper>
     </div>
   );
