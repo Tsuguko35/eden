@@ -1,14 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
 import "../../styles/servicesContent.css";
 
 import { Link } from "react-router-dom";
 
 import CircleMemberCarousel from "../reusable/CircleMemberCarousel";
 import ClientReviewsMini from "../reusable/ClientReviewsMini";
+import ProductDialog from "../reusable/ProductDialog";
 
 function ServicesContent() {
+  const [show, setShow] = useState(false);
+  const [product, setProduct] = useState(null);
+
+  const openServices = (service) => {
+    setShow(true);
+    setProduct(service);
+  };
+
   return (
     <div id="servicesContent" className="servicesContent">
+      {/* Dialog */}
+      <ProductDialog show={show} setShow={setShow} product={product} />
+
+      {/* Main */}
       <div className="wrapper">
         <div className="products-showcase">
           <div className="background">
@@ -141,7 +154,9 @@ function ServicesContent() {
                       insulation that is installed by blowing it into attics,
                       walls, and other cavities. It is made of tiny particles of
                     </p>
-                    <Link to={`/Services/Products`}>View Service</Link>
+                    <button onClick={() => openServices("Essentials")}>
+                      View Service
+                    </button>
                   </div>
                 </div>
               </div>
@@ -167,7 +182,9 @@ function ServicesContent() {
                       LED's are far more energy-efficient than traditional
                       incandescent bulbs and fluorescent bulbs
                     </p>
-                    <Link to={`/Services/Products`}>View Service</Link>
+                    <button onClick={() => openServices("Pro")}>
+                      View Service
+                    </button>
                   </div>
                 </div>
               </div>
@@ -193,7 +210,9 @@ function ServicesContent() {
                       UVC light technology offers a proven weapon in the fight
                       against germs. Our UVC Disinfection Solutions
                     </p>
-                    <Link to={`/Services/Products`}>View Service</Link>
+                    <button onClick={() => openServices("Elite")}>
+                      View Service
+                    </button>
                   </div>
                 </div>
               </div>
@@ -219,7 +238,9 @@ function ServicesContent() {
                       Ecostella is a device designed to improve the efficiency
                       of your existing HVAC system, specifically
                     </p>
-                    <Link to={`/Services/Products`}>View Service</Link>
+                    <button onClick={() => openServices("Power")}>
+                      View Service
+                    </button>
                   </div>
                 </div>
               </div>

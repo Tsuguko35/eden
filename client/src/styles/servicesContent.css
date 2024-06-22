@@ -261,7 +261,7 @@
     overflow: hidden;
 }
 
-#servicesContent > .wrapper > .products-showcase > .product-showcase-content > .product-grid > .product-container > .product > .text-content > a{
+#servicesContent > .wrapper > .products-showcase > .product-showcase-content > .product-grid > .product-container > .product > .text-content > button{
     width: 100%;
     padding: 15px;
     border-radius: 5px;
@@ -277,7 +277,7 @@
     
 }
 
-#servicesContent > .wrapper > .products-showcase > .product-showcase-content > .product-grid > .product-container > .product > .text-content > a:hover{
+#servicesContent > .wrapper > .products-showcase > .product-showcase-content > .product-grid > .product-container > .product > .text-content > button:hover{
     opacity: 0.8;
     color: white;
 }
