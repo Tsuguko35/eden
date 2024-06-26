@@ -144,7 +144,7 @@ function ServicesContent() {
                   </div>
                   <div className="image">
                     <img
-                      src="https://res.cloudinary.com/dkwgg59ur/image/upload/v1718927536/Eden_Files/Eden_Services/Icons/obcweyfptddqvz8e82we.webp"
+                      src="https://res.cloudinary.com/dkwgg59ur/image/upload/v1719357835/Eden_Files/Eden_Services/Icons/ll3ehomeeiyjqwwubmvy.webp"
                       alt="product"
                     />
                   </div>
@@ -172,7 +172,7 @@ function ServicesContent() {
                   </div>
                   <div className="image">
                     <img
-                      src="https://res.cloudinary.com/dkwgg59ur/image/upload/v1718927511/Eden_Files/Eden_Services/Icons/l3dfuzxzp30xtghwc9qq.webp"
+                      src="https://res.cloudinary.com/dkwgg59ur/image/upload/v1719357835/Eden_Files/Eden_Services/Icons/f859cmerrvw80qbonwev.webp"
                       alt="product"
                     />
                   </div>
@@ -200,7 +200,7 @@ function ServicesContent() {
                   </div>
                   <div className="image">
                     <img
-                      src="https://res.cloudinary.com/dkwgg59ur/image/upload/v1718927511/Eden_Files/Eden_Services/Icons/zqkzlmmjvdi94qksrb64.webp"
+                      src="https://res.cloudinary.com/dkwgg59ur/image/upload/v1719357836/Eden_Files/Eden_Services/Icons/hujsg1qqvxhlsktf7w48.webp"
                       alt="product"
                     />
                   </div>
@@ -228,7 +228,7 @@ function ServicesContent() {
                   </div>
                   <div className="image">
                     <img
-                      src="https://res.cloudinary.com/dkwgg59ur/image/upload/v1718927512/Eden_Files/Eden_Services/Icons/i8eq5csf2il3ittvyxvw.webp"
+                      src="https://res.cloudinary.com/dkwgg59ur/image/upload/v1719357836/Eden_Files/Eden_Services/Icons/ekjqa67shduh4evy832p.webp"
                       alt="product"
                     />
                   </div>

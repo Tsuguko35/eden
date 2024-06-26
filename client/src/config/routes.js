@@ -17,21 +17,25 @@ const routes = [
     component: <LandingPage />,
   },
   {
+    path: "/*",
+    component: <LandingPage />,
+  },
+  {
     path: "/Services",
     component: <Services />,
   },
-  {
-    path: "/Services/Products",
-    component: <Products />,
-  },
-  {
-    path: "/Services/Products/:productName",
-    component: <ProductShowcase />,
-  },
-  {
-    path: "/Services/Products/Quote",
-    component: <ProductQuote />,
-  },
+  // {
+  //   path: "/Services/Products",
+  //   component: <Products />,
+  // },
+  // {
+  //   path: "/Services/Products/:productName",
+  //   component: <ProductShowcase />,
+  // },
+  // {
+  //   path: "/Services/Products/Quote",
+  //   component: <ProductQuote />,
+  // },
   {
     path: "/Portfolio",
     component: <Portfolio />,

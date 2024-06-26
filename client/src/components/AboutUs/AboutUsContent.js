@@ -93,14 +93,26 @@ function AboutUsContent() {
           <div className="details-container">
             <div className="details">
               <div className="title">Bill Hicks</div>
-              <div className="label">Vice President of Dealer Relations</div>
+              <div className="label">
+                Senior Vice President of Sales & Marketing
+              </div>
 
               <div className="desc">
-                Bill Hicks oversees the development and maintenance of strategic
-                partnerships with dealers, ensuring effective communication and
-                mutual growth. He implements innovative strategies to enhance
-                dealer satisfaction and drive business performance, supporting
-                dealers with the tools and resources they need to succeed.
+                Bill Hicks is an accomplished sales and marketing executive with
+                extensive experience across multiple industries. Currently
+                serving as the SVP of Sales & Marketing for Eden HVAC & Home
+                Efficiency, ARC Corporation, and Genesis Solar Power, Bill
+                operates remotely from Montana, where he leverages his expertise
+                to enhance comfort, maximize efficiency, and drive
+                industry-leading solutions. His strategic leadership at Genesis
+                Solar Power ensures comprehensive excellence in solar EPC
+                services. Additionally, Bill contributes his skills to Sojourner
+                International Inc. as a Director/Board Member, supporting
+                community-focused initiatives locally and globally. Bill's
+                dedication to transforming environments, safeguarding
+                investments, and fostering sustainability underscores his
+                commitment to making a positive impact in every role he
+                undertakes.
               </div>
             </div>
             <div className="image">

@@ -75,6 +75,7 @@
 #membersCarousel > .wrapper > .carousel > .text-content > .desc{
     font-weight: 300;
     font-size: 18px;
+    overflow: auto;
 }
 
 #membersCarousel .card-image{
