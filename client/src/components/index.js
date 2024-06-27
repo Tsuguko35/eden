@@ -28,6 +28,7 @@ import BecomeDealerForm from "./reusable/BecomeDealerForm";
 import PrivacyPolicy from "./reusable/PrivacyPolicy";
 import PortfolioShowcaseContent from "./Portfolio/PortfolioShowcaseContent";
 import ProductDialog from "./reusable/ProductDialog";
+import FacebookMsg from "./FacebookMsg";
 
 export {
   NavBar,
@@ -60,4 +61,5 @@ export {
   PrivacyPolicy,
   PortfolioShowcaseContent,
   ProductDialog,
+  FacebookMsg,
 };

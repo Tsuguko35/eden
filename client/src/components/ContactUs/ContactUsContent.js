@@ -170,7 +170,10 @@ function ContactUsContent() {
                 </div>
               </div>
               <div className="social-icons">
-                <Link>
+                <Link
+                  to={"https://www.facebook.com/profile.php?id=61559487871453"}
+                  target="_blank"
+                >
                   <Io5Icons.IoLogoFacebook />
                 </Link>
               </div>

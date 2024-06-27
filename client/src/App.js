@@ -1,7 +1,7 @@
 import { Route, Routes, useLocation } from "react-router-dom";
 import { routes } from "./config";
 import "./styles/styles.css";
-import { NavBar, PrivacyPolicy } from "./components";
+import { FacebookMsg, NavBar, PrivacyPolicy } from "./components";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -40,6 +40,9 @@ function App() {
 
       {/* Nav Bar */}
       <NavBar />
+
+      {/* Facebook Chat */}
+      <FacebookMsg />
 
       {/* Pages */}
       <ServicesQuotation.Provider
