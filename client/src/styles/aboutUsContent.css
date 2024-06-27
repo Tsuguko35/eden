@@ -12,6 +12,12 @@
     align-items: center;
 }
 
+#aboutUsContent > .wrapper > .tagembed{
+    width: 100%;
+    max-width: 1920px;
+    padding: 100px;
+}
+
 #aboutUsContent > .wrapper > .about-details{
     position: relative;
     width: 100%;
@@ -300,7 +306,8 @@
 }
 
 @media only screen and (max-width: 1024px){
-    #aboutUsContent > .wrapper > .about-details > .details-container{
+    #aboutUsContent > .wrapper > .about-details > .details-container,
+    #aboutUsContent > .wrapper > .tagembed{
         padding: 50px;
     }
 
@@ -394,7 +401,8 @@
         padding: 50px;
     }
 
-    #aboutUsContent > .wrapper > .hero > .hero-content > .why-us-container > .why-us{
+    #aboutUsContent > .wrapper > .hero > .hero-content > .why-us-container > .why-us,
+    #aboutUsContent > .wrapper > .tagembed{
         padding: 20px;
     }
 }

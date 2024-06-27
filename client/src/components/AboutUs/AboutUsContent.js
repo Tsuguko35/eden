@@ -3,6 +3,7 @@ import "../../styles/aboutUsContent.css";
 
 import * as Io5Icons from "react-icons/io5";
 import ClientReviewsBig from "../reusable/ClientReviewsBig";
+import TagEmbed from "../reusable/TagEmbed";
 
 function AboutUsContent() {
   return (
@@ -235,7 +236,8 @@ function AboutUsContent() {
         </div>
 
         {/* Client Reviews */}
-        <ClientReviewsBig />
+        {/* <ClientReviewsBig /> */}
+        <TagEmbed />
       </div>
     </div>
   );
