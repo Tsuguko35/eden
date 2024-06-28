@@ -82,22 +82,22 @@ function Footer() {
               <p className="title">Company</p>
               <Link to={"/About"}>About</Link>
               <Link to={"/Contact"}>Contact</Link>
-              <Link to={"/Portfolio"}>Blogs</Link>
+              <Link to={"/Portfolio"}>Portfolio</Link>
             </div>
             <div className="nav-list">
               <p className="title">Legal</p>
               <Link onClick={() => setShowPrivacyPolicy(true)}>
                 Privacy Policy
               </Link>
-              <Link>Terms & Services</Link>
-              <Link>Terms of Use</Link>
-              <Link>Refund Policy</Link>
             </div>
             <div className="nav-list">
               <p className="title">Quick Links</p>
-              <Link>Eden Community</Link>
-              <Link>Downloads</Link>
-              <Link>Forum</Link>
+              <Link
+                to={"https://www.facebook.com/profile.php?id=61559487871453"}
+                target="_blank"
+              >
+                Facebook
+              </Link>
             </div>
           </div>
           <div className="news-letter-container">
