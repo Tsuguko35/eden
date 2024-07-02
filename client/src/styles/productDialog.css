@@ -152,16 +152,16 @@
 }
 
 #productDialog > .container > .content::-webkit-scrollbar{
-    width: 3px;
-    height: 3px;
+    width: 4px;
+    height: 4px;
 }
 
 #productDialog > .container > .content::-webkit-scrollbar-track{
-    background-color: transparent;
+    background-color: var(--hero-overlay-light);
 }
 
 #productDialog > .container > .content::-webkit-scrollbar-thumb{
-    background-color: var(--hero-overlay-light);
+    background-color: var(--secondary);
     opacity: 0.2;
     border-radius: 20px;
 }
