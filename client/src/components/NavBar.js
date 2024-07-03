@@ -7,6 +7,7 @@ import { Sling as Hamburger } from "hamburger-react";
 
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { MdArrowDropDown } from "react-icons/md";
+import routes from "../config/routes";
 
 function NavBar() {
   const navigate = useNavigate();
@@ -88,7 +89,12 @@ function NavBar() {
         {windowWidth > 1024 && (
           <div className="navigation">
             <Link
-              className={`${location.pathname === "/" ? "active" : ""}`}
+              className={`${
+                location.pathname === "/" ||
+                !routes.some((route) => route.path.includes(location.pathname))
+                  ? "active"
+                  : ""
+              }`}
               to={"/"}
               onMouseEnter={() => resetState()}
             >
@@ -96,7 +102,10 @@ function NavBar() {
             </Link>
             <Link
               className={`${
-                location.pathname.includes("/Services") ? "active" : ""
+                location.pathname === "/Services" ||
+                location.pathname.includes("/Services/")
+                  ? "active"
+                  : ""
               }`}
               to={"/Services"}
               onMouseEnter={() => handleMouseEnter("Services")}
@@ -112,7 +121,10 @@ function NavBar() {
             </Link>
             <Link
               className={`${
-                location.pathname === "/Portfolio" ? "active" : ""
+                location.pathname === "/Portfolio" ||
+                location.pathname.includes("/Portfolio/Showcase/")
+                  ? "active"
+                  : ""
               }`}
               to={"/Portfolio"}
               onMouseEnter={() => handleMouseEnter("Portfolio")}

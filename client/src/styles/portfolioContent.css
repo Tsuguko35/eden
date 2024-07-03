@@ -13,6 +13,21 @@
     padding: 100px;
 }
 
+#portfolioContent > .wrapper > .posts{
+    width: 100%;
+    height: 1000px;
+    padding-bottom: 200px;
+}
+
+#portfolioContent > .wrapper > .posts > .title{
+    width: 100%;
+    text-align: center;
+    padding: 30px 20px;
+    font-size: 32px;
+    color: var(--primary);
+    font-weight: 300;
+}
+
 #portfolioContent > .wrapper > .achievements{
     width: 100%;
     height: 100%;

@@ -33,6 +33,16 @@ function PortfolioContent() {
       <PortfolioGrid />
 
       <div className="wrapper">
+        <div className="posts ignore-scroll">
+          <p className="title">Facebook Posts</p>
+          <iframe
+            src="https://widget.tagembed.com/154766?view"
+            style={{ width: "100%", height: "100%", overflow: "auto" }}
+            frameborder="0"
+            allowtransparency="true"
+          ></iframe>
+        </div>
+
         <div className="achievements">
           <p className="title">
             Exceptional User Experience: Our Statistic Showcase
