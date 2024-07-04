@@ -17,8 +17,10 @@ function LandingPageHeader() {
           </div>
         </div>
         <div className="header-text">
-          <p className="main-text">“We Enhance America”</p>
-          <div className="sub-text">Home Solution</div>
+          <p className="main-text reveal">“We Enhance America”</p>
+          <div className="sub-text reveal" style={{ animationDelay: "0.2s" }}>
+            Home Solution
+          </div>
         </div>
       </div>
     </header>

@@ -13,7 +13,7 @@ function Faq() {
     }
   };
   return (
-    <div id="faq" className="faq">
+    <div id="faq" className="faq reveal">
       <p className="title">Frequently Asked Questions</p>
       <div className="faq-flex">
         <div className="faq-group">

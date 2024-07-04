@@ -9,9 +9,9 @@ function AboutUsContent() {
   return (
     <div id="aboutUsContent" className="aboutUsContent">
       <div className="wrapper">
-        <div className="about-details">
+        <div className="about-details feature">
           <div className="details-container">
-            <div className="details">
+            <div id="_Company" className="details">
               <div className="label">Who we are as a company</div>
               <div className="title">
                 We Provide Great Solution For Great Americans
@@ -40,8 +40,8 @@ function AboutUsContent() {
           </div>
         </div>
 
-        <div className="about-details member inverted">
-          <div className="details-container">
+        <div id="_Team" className="about-details member inverted">
+          <div className="details-container feature">
             <div className="details">
               <div className="title">William Beliles</div>
               <div className="label">Chief Executive Officer</div>
@@ -65,7 +65,7 @@ function AboutUsContent() {
         </div>
 
         <div className="about-details member">
-          <div className="details-container">
+          <div className="details-container feature">
             <div className="details">
               <div className="title">Amanda Beliles</div>
               <div className="label">President</div>
@@ -91,7 +91,7 @@ function AboutUsContent() {
         </div>
 
         <div className="about-details member inverted">
-          <div className="details-container">
+          <div className="details-container feature">
             <div className="details">
               <div className="title">Bill Hicks</div>
               <div className="label">
@@ -125,9 +125,9 @@ function AboutUsContent() {
           </div>
         </div>
 
-        <div className="hero primary no-max-height">
+        <div id="_OtherServices" className="hero primary no-max-height">
           <div className="background"></div>
-          <div className="hero-content center">
+          <div className="hero-content center feature">
             <div className="title">
               <p>More Opportunities Available!</p>
               <p>
@@ -165,9 +165,9 @@ function AboutUsContent() {
           </div>
         </div>
 
-        <div className="hero">
+        <div id="_WhyUs" className="hero">
           <div className="background"></div>
-          <div className="hero-content">
+          <div className="hero-content feature">
             <div className="title">
               <p>
                 JOIN THE BEST{" "}

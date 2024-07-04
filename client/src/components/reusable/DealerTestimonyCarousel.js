@@ -6,7 +6,10 @@ import { dealer_reviews } from "../../utils";
 
 function DealerTestimonyCarousel() {
   return (
-    <div id="dealerTestimonyCarousel" className="dealerTestimonyCarousel">
+    <div
+      id="dealerTestimonyCarousel"
+      className="dealerTestimonyCarousel feature"
+    >
       <p className="title">Testimonials from our dealers</p>
       <p className="label">
         Discover the power of our partnerships through the experiences of our

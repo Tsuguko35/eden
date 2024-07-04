@@ -16,7 +16,7 @@ function ServicesHeader() {
         </div>
         <div className="header-content">
           <div className="text-content">
-            <div className="services">
+            <div className="services reveal">
               <p className="title">Our Services</p>
               <p className="desc">
                 Discover expert home maintenance and appliance services tailored
@@ -41,7 +41,11 @@ function ServicesHeader() {
                 </div>
               </div>
             </div>
-            <div id="_Return" className="list">
+            <div
+              id="_Return"
+              className="list reveal"
+              style={{ animationDelay: "0.5s" }}
+            >
               <p className="title">What you’ll get in return</p>
               <div className="list-container">
                 <div className="item">

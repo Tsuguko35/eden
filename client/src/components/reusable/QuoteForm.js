@@ -69,7 +69,13 @@ function QuoteForm() {
   };
 
   return (
-    <form ref={form} onSubmit={sendEmail} id="quoteForm" className="quoteForm">
+    <form
+      ref={form}
+      onSubmit={sendEmail}
+      id="quoteForm"
+      className="quoteForm reveal"
+      style={{ animationDelay: "0.8s" }}
+    >
       <input
         type="text"
         value={`${formData.first_name} ${formData.last_name}`}

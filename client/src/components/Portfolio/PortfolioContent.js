@@ -6,7 +6,11 @@ function PortfolioContent() {
   return (
     <div id="portfolioContent" className="portfolioContent">
       <div className="wrapper">
-        <div className="achievements">
+        <div
+          id="_Achievements"
+          className="achievements reveal"
+          style={{ animationDelay: "0.7s" }}
+        >
           <p className="title">Our Achievements</p>
           <p className="desc">
             Explore our milestones and accomplishments, showcasing our
@@ -33,7 +37,7 @@ function PortfolioContent() {
       <PortfolioGrid />
 
       <div className="wrapper">
-        <div className="posts ignore-scroll">
+        <div className="posts ignore-scroll feature">
           <p className="title">Facebook Posts</p>
           <iframe
             src="https://widget.tagembed.com/154766?view"
@@ -43,7 +47,7 @@ function PortfolioContent() {
           ></iframe>
         </div>
 
-        <div className="achievements">
+        <div id="_Statistics" className="achievements feature">
           <p className="title">
             Exceptional User Experience: Our Statistic Showcase
           </p>

@@ -34,7 +34,7 @@ function ServicesContent() {
           <div id="_ServiceCategory" className="product-showcase-content">
             <p className="title">“Modern Problem Needs Modern Solution”</p>
 
-            <div className="product-introduction">
+            <div className="product-introduction feature">
               <div className="title">
                 <p className="main">PRODUCT & SERVICES</p>
                 <p className="sub">
@@ -132,7 +132,7 @@ function ServicesContent() {
               </div>
             </div>
 
-            <div className="product-grid">
+            <div className="product-grid feature">
               <div className="product-container">
                 <div className="product">
                   <div className="product-tag">
@@ -251,7 +251,7 @@ function ServicesContent() {
         {/* Member Carousel */}
         {/* <CircleMemberCarousel /> */}
 
-        <div id="_ClientReviews" className="client-reviews">
+        <div id="_ClientReviews" className="client-reviews feature">
           <div className="client-reviews-container">
             <div className="image">
               <img

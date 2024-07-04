@@ -34,6 +34,28 @@ function App() {
     }, 300);
   }, [location]);
 
+  //Animation
+  // Animations
+  useEffect(() => {
+    const handleScroll = () => {
+      const triggerPoint = window.innerHeight * 0.65;
+      const features = document.querySelectorAll(".feature");
+
+      features.forEach((feature) => {
+        const featureBounding = feature.getBoundingClientRect();
+
+        if (featureBounding.top <= triggerPoint) {
+          feature.classList.add("reveal");
+        }
+      });
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <div id="main-container" data-scroll-container>
       <PrivacyPolicy show={showPrivacyPolicy} setShow={setShowPrivacyPolicy} />
@@ -57,6 +79,7 @@ function App() {
           <Routes>
             {routes.map((route) => (
               <Route
+                exact
                 key={route.path}
                 path={route.path}
                 element={route.component}

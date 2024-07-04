@@ -70,6 +70,18 @@ function NavBar() {
     setHoveredNav("");
   };
 
+  const isActive = !routes.some((route) => {
+    let isEqual = false;
+    if (location.pathname.includes("/Portfolio/Showcase")) {
+      isEqual = location.pathname
+        .toLowerCase()
+        .includes(route.path.toLowerCase());
+    } else {
+      isEqual = location.pathname.toLowerCase() === route.path.toLowerCase();
+    }
+    return isEqual;
+  });
+
   return (
     <nav
       id="navBar"
@@ -90,10 +102,7 @@ function NavBar() {
           <div className="navigation">
             <Link
               className={`${
-                location.pathname === "/" ||
-                !routes.some((route) => route.path.includes(location.pathname))
-                  ? "active"
-                  : ""
+                location.pathname === "/" || isActive ? "active" : ""
               }`}
               to={"/"}
               onMouseEnter={() => resetState()}
@@ -102,8 +111,10 @@ function NavBar() {
             </Link>
             <Link
               className={`${
-                location.pathname === "/Services" ||
-                location.pathname.includes("/Services/")
+                location.pathname.toLowerCase() === "/Services".toLowerCase() ||
+                location.pathname
+                  .toLowerCase()
+                  .includes("/Services/".toLowerCase())
                   ? "active"
                   : ""
               }`}
@@ -111,18 +122,14 @@ function NavBar() {
               onMouseEnter={() => handleMouseEnter("Services")}
             >
               Service <MdKeyboardArrowDown />
-              {/* <div
-                className={`bottom-icon ${
-                  hoveredNav === "Services" ? "show" : ""
-                }`}
-              >
-                <MdArrowDropDown />
-              </div> */}
             </Link>
             <Link
               className={`${
-                location.pathname === "/Portfolio" ||
-                location.pathname.includes("/Portfolio/Showcase/")
+                location.pathname.toLowerCase() ===
+                  "/Portfolio".toLowerCase() ||
+                location.pathname
+                  .toLowerCase()
+                  .includes("/Portfolio/Showcase/".toLowerCase())
                   ? "active"
                   : ""
               }`}
@@ -130,30 +137,24 @@ function NavBar() {
               onMouseEnter={() => handleMouseEnter("Portfolio")}
             >
               Portfolio <MdKeyboardArrowDown />
-              {/* <div
-                className={`bottom-icon ${
-                  hoveredNav === "Portfolio" ? "show" : ""
-                }`}
-              >
-                <MdArrowDropDown />
-              </div> */}
             </Link>
             <Link
-              className={`${location.pathname === "/About" ? "active" : ""}`}
+              className={`${
+                location.pathname.toLowerCase() === "/About".toLowerCase()
+                  ? "active"
+                  : ""
+              }`}
               to={"/About"}
               onMouseEnter={() => handleMouseEnter("About")}
             >
               About <MdKeyboardArrowDown />
-              {/* <div
-                className={`bottom-icon ${
-                  hoveredNav === "About" ? "show" : ""
-                }`}
-              >
-                <MdArrowDropDown />
-              </div> */}
             </Link>
             <Link
-              className={`${location.pathname === "/Contact" ? "active" : ""}`}
+              className={`${
+                location.pathname.toLowerCase() === "/Contact".toLowerCase()
+                  ? "active"
+                  : ""
+              }`}
               to={"/Contact"}
               onMouseEnter={() => resetState()}
             >
@@ -161,7 +162,10 @@ function NavBar() {
             </Link>
             <Link
               className={`${
-                location.pathname === "/BecomeADealer" ? "active" : ""
+                location.pathname.toLowerCase() ===
+                "/BecomeADealer".toLowerCase()
+                  ? "active"
+                  : ""
               }`}
               to={"/BecomeADealer"}
               onMouseEnter={() => resetState()}
@@ -187,14 +191,22 @@ function NavBar() {
             </div>
             <div className={`navigation mobile ${sidebarOpen ? "open" : ""}`}>
               <Link
-                className={`${location.pathname === "/" ? "active" : ""}`}
+                className={`${
+                  location.pathname === "/" || isActive ? "active" : ""
+                }`}
                 to={"/"}
               >
                 Home
               </Link>
               <Link
                 className={`${
-                  location.pathname === "/Services" ? "active" : ""
+                  location.pathname.toLowerCase() ===
+                    "/Services".toLowerCase() ||
+                  location.pathname
+                    .toLowerCase()
+                    .includes("/Services/".toLowerCase())
+                    ? "active"
+                    : ""
                 }`}
                 to={"/Services"}
               >
@@ -202,21 +214,33 @@ function NavBar() {
               </Link>
               <Link
                 className={`${
-                  location.pathname === "/Portfolio" ? "active" : ""
+                  location.pathname.toLowerCase() ===
+                    "/Portfolio".toLowerCase() ||
+                  location.pathname
+                    .toLowerCase()
+                    .includes("/Portfolio/Showcase/".toLowerCase())
+                    ? "active"
+                    : ""
                 }`}
                 to={"/Portfolio"}
               >
                 Portfolio
               </Link>
               <Link
-                className={`${location.pathname === "/About" ? "active" : ""}`}
+                className={`${
+                  location.pathname.toLowerCase() === "/About".toLowerCase()
+                    ? "active"
+                    : ""
+                }`}
                 to={"/About"}
               >
                 About
               </Link>
               <Link
                 className={`${
-                  location.pathname === "/Contact" ? "active" : ""
+                  location.pathname.toLowerCase() === "/Contact".toLowerCase()
+                    ? "active"
+                    : ""
                 }`}
                 to={"/Contact"}
               >
@@ -224,7 +248,10 @@ function NavBar() {
               </Link>
               <Link
                 className={`${
-                  location.pathname === "/BecomeADealer" ? "active" : ""
+                  location.pathname.toLowerCase() ===
+                  "/BecomeADealer".toLowerCase()
+                    ? "active"
+                    : ""
                 }`}
                 to={"/BecomeADealer"}
               >

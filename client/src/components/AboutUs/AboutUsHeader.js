@@ -15,7 +15,7 @@ function AboutUsHeader() {
           />
         </div>
 
-        <div className="header-content">
+        <div className="header-content reveal">
           <p className="title">About Us</p>
           <p className="desc">
             Welcome to EDEN Home Solution, your trusted partner in home

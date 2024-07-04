@@ -32,7 +32,7 @@ function MembersCarousel() {
   };
   return (
     <div id="membersCarousel" className="membersCarousel">
-      <div className="wrapper">
+      <div className="wrapper feature">
         <div className="header">
           <p className="label">MEET OUR MEMBERS</p>
           <p className="title">The Faces of Excellence</p>

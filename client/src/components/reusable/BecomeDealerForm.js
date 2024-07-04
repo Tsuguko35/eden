@@ -69,7 +69,7 @@ function BecomeDealerForm() {
       ref={form}
       onSubmit={sendEmail}
       id="becomeDealerForm"
-      className="becomeDealerForm"
+      className="becomeDealerForm feature"
     >
       <div className="text-content">
         <p className="label">

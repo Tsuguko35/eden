@@ -15,7 +15,7 @@ function BecomeADealerContent() {
             alt=""
           />
         </div>
-        <div className="text-content">
+        <div className="text-content reveal">
           <p className="title">Become Our Dealer</p>
           <p className="desc">
             Whether you have a question, need assistance, or want to provide
@@ -29,8 +29,10 @@ function BecomeADealerContent() {
       </header>
       <div className="wrapper">
         <div className="offset">
-          <p className="label">WHAT YOU'LL GAIN BY PARTNERING WITH US</p>
-          <div className="cards">
+          <p className="label reveal" style={{ animationDelay: "0.5s" }}>
+            WHAT YOU'LL GAIN BY PARTNERING WITH US
+          </p>
+          <div className="cards reveal" style={{ animationDelay: "0.5s" }}>
             <div className="card">
               <div className="image">
                 <img
@@ -77,7 +79,7 @@ function BecomeADealerContent() {
               </div>
             </div>
           </div>
-          <div className="counters">
+          <div className="counters reveal" style={{ animationDelay: "0.5s" }}>
             <div className="count">
               <p className="number">150+</p>
               <p className="label">Companies Worldwide</p>
@@ -95,7 +97,7 @@ function BecomeADealerContent() {
       </div>
 
       <div className="company-offer">
-        <div className="wrapper">
+        <div className="wrapper feature">
           <div className="text-content">
             <div className="header">
               <p className="label">What We Offer</p>

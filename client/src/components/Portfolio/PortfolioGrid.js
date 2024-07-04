@@ -6,7 +6,7 @@ import * as GoIcons from "react-icons/go";
 function PortfolioGrid() {
   return (
     <div id="portfolioGrid" className="portfolioGrid">
-      <div className="wrapper">
+      <div id="_Works" className="wrapper">
         <div className="background"></div>
         <div className="grid-content">
           <p className="title">Our Achievements in Home Appliance Solutions</p>
@@ -16,7 +16,7 @@ function PortfolioGrid() {
             with precision and care, delivering reliable and efficient solutions
             for all your home appliance needs.
           </p>
-          <div className="grid">
+          <div className="grid feature">
             <div className="item">
               <img
                 src="https://res.cloudinary.com/dkwgg59ur/image/upload/v1716592440/Eden_Files/Eden_Portfolio/Header/xmzma2ypoivvba3xyvmo.jpg"

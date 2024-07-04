@@ -2,7 +2,7 @@ import React from "react";
 
 function TagEmbed() {
   return (
-    <div className="tagembed ignore-scroll">
+    <div className="tagembed ignore-scroll feature">
       <iframe
         className=""
         src="https://widget.tagembed.com/154445?view"

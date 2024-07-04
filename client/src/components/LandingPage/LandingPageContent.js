@@ -28,7 +28,7 @@ function LandingPageContent() {
   return (
     <div id="landingPageContent" className="landingPageContent">
       <div className="wrapper">
-        <div className="company-details withPadding">
+        <div className="company-details withPadding feature">
           <div className="details">
             <p className="label">Who we are as a company</p>
             <p className="title">EDEN as a Company</p>
@@ -52,7 +52,7 @@ function LandingPageContent() {
           </div>
         </div>
         <div className="innovations">
-          <div className="container">
+          <div className="container feature">
             <div className="carousel">
               <InnovationCarousel />
             </div>
@@ -80,8 +80,8 @@ function LandingPageContent() {
         </div>
         <div className="line-details">
           <div className="lines">
-            <span className="secondary"></span>
-            <span className="dark"></span>
+            <span className="secondary move-line-secondary"></span>
+            <span className="dark move-line-dark"></span>
           </div>
         </div>
 
@@ -90,13 +90,13 @@ function LandingPageContent() {
 
         <div className="line-details">
           <div className="lines left">
-            <span className="dark"></span>
-            <span className="secondary"></span>
+            <span className="dark move-line-dark"></span>
+            <span className="secondary move-line-secondary"></span>
           </div>
         </div>
 
         <div className="visuals-container">
-          <div className="container">
+          <div className="container feature">
             <div className="title">
               Embodied Excellence: Our Commitments in Action
             </div>
@@ -117,7 +117,7 @@ function LandingPageContent() {
           </div>
         </div>
 
-        <div className="quote-container">
+        <div className="quote-container feature">
           <div className="title">Get Your Personalized Quote Today!</div>
           <div className="desc">
             Get competitive prices for your project or product by requesting a
@@ -128,7 +128,7 @@ function LandingPageContent() {
           </div>
         </div>
 
-        <div className="google-map">
+        <div className="google-map feature">
           <div className="map">
             <div className="map-container">
               <MapComponent
@@ -162,12 +162,12 @@ function LandingPageContent() {
 
         <div className="line-details">
           <div className="lines left">
-            <span className="dark"></span>
-            <span className="secondary"></span>
+            <span className="dark move-line-dark"></span>
+            <span className="secondary move-line-secondary"></span>
           </div>
         </div>
 
-        <div className="company-details withPadding">
+        <div className="company-details withPadding feature">
           <div className="details">
             <p className="label">Our Portfolio Showcase</p>
             <p className="title">Discover Excellence: Our Portfolio Unveiled</p>

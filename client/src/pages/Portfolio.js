@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Footer, PortfolioContent, PortfolioHeader } from "../components";
 
 function Portfolio() {
+  useEffect(() => {
+    document.title = "Eden | Portfolio";
+  }, []);
   return (
     <div id="portfolio" className="portfolio">
       {/* Header */}

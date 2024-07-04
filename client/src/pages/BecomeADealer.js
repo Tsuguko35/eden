@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { BecomeADealerContent, Footer } from "../components";
 
 function BecomeADealer() {
+  useEffect(() => {
+    document.title = "Eden | Become A Dealer";
+  }, []);
   return (
     <div id="becomeADealer" className="becomeADealer">
       {/* Content */}

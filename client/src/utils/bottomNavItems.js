@@ -40,12 +40,14 @@ const bottomNavItems = [
     title: "Portfolio",
     items: [
       {
+        serviceTarget: "/Portfolio#_Clients",
         serviceIcon:
           "https://res.cloudinary.com/dkwgg59ur/image/upload/v1717825844/Eden_Files/Eden_Icons/vtq2amg6trdyehkerh0c.webp",
         serviceName: "Corporate Clients",
         serviceDesc: "List of companies that we already work with.",
       },
       {
+        serviceTarget: "/Portfolio#_Achievements",
         serviceIcon:
           "https://res.cloudinary.com/dkwgg59ur/image/upload/v1717825844/Eden_Files/Eden_Icons/olwkxjozcotw8g3l7qtm.webp",
         serviceName: "Our achievements ",
@@ -53,6 +55,7 @@ const bottomNavItems = [
           "Explore our journey and commitment to top-notch home maintenance and appliance services.",
       },
       {
+        serviceTarget: "/Portfolio#_Works",
         serviceIcon:
           "https://res.cloudinary.com/dkwgg59ur/image/upload/v1717825844/Eden_Files/Eden_Icons/kndj9ahrt7rvrywercis.webp",
         serviceName: "Successful Works",
@@ -60,6 +63,7 @@ const bottomNavItems = [
           "Explore our portfolio and discover how we consistently deliver exceptional service for diverse clients in the home maintenance and appliance repair space.",
       },
       {
+        serviceTarget: "/Portfolio#_Statistics",
         serviceIcon:
           "https://res.cloudinary.com/dkwgg59ur/image/upload/v1717825844/Eden_Files/Eden_Icons/hv8frdshhvu15jjnucu1.webp",
         serviceName: "Statistical Reports",
@@ -72,31 +76,36 @@ const bottomNavItems = [
     title: "About",
     items: [
       {
+        serviceTarget: "/About#_Company",
         serviceIcon:
           "https://res.cloudinary.com/dkwgg59ur/image/upload/v1717825844/Eden_Files/Eden_Icons/vtq2amg6trdyehkerh0c.webp",
-        serviceName: "Chief Executive Officer",
-        serviceDesc: "Leading the company towards success with a clear vision.",
+        serviceName: "What is Eden Solutions",
+        serviceDesc:
+          "We are dedicated to transforming houses into homes through innovative, high-quality solutions.",
       },
       {
+        serviceTarget: "/About#_Team",
         serviceIcon:
           "https://res.cloudinary.com/dkwgg59ur/image/upload/v1717825844/Eden_Files/Eden_Icons/olwkxjozcotw8g3l7qtm.webp",
-        serviceName: "President",
+        serviceName: "Meet the Team",
         serviceDesc:
-          "Bringing a wealth of experience and knowledge to the company.",
+          "Meet the team that is leading the company towards success with a clear vision.",
       },
       {
+        serviceTarget: "/About#_OtherServices",
         serviceIcon:
           "https://res.cloudinary.com/dkwgg59ur/image/upload/v1717825844/Eden_Files/Eden_Icons/kndj9ahrt7rvrywercis.webp",
-        serviceName: "Vice President of Dealer Relations",
+        serviceName: "Other Services",
         serviceDesc:
-          "Forging strategic relationships with dealers to drive mutual success.",
+          "Eden is part of a larger vision, completing the trinity of home services.",
       },
       {
+        serviceTarget: "/About#_WhyUs",
         serviceIcon:
           "https://res.cloudinary.com/dkwgg59ur/image/upload/v1717825844/Eden_Files/Eden_Icons/hv8frdshhvu15jjnucu1.webp",
         serviceName: "Why Us?",
         serviceDesc:
-          "Discover what sets us apart and how we deliver exceptional value to our clients.",
+          "From renovation projects to interior design consultations, we offer tailored solutions to meet your unique needs.",
       },
     ],
   },

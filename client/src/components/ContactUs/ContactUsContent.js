@@ -59,7 +59,7 @@ function ContactUsContent() {
     });
   };
   return (
-    <div id="contactUsContent" className="contactUsContent">
+    <div id="contactUsContent" className="contactUsContent reveal">
       <div className="wrapper">
         <div className="contact-us-container">
           <div className="form">
