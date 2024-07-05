@@ -24,6 +24,7 @@
     height: 100%;
     display: flex;
     align-items: center;
+    gap: 20px;
 }
 
 #landingPageContent > .wrapper > .company-details > .details{
@@ -49,6 +50,7 @@
     color: var(--text);
     font-size: 18px;
     font-weight: 300;
+    text-align: justify;
 }
 
 #landingPageContent > .wrapper > .company-details > .details > .action{

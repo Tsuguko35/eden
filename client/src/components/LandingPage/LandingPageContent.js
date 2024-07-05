@@ -3,15 +3,45 @@ import "../../styles/landingPageContent.css";
 
 import LoadingDot from "../../assets/svg/LoadingDot";
 
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import InnovationCarousel from "../reusable/InnovationCarousel";
 import MembersCarousel from "../reusable/MembersCarousel";
 import MapComponent from "../reusable/MapComponent";
 import MiniPortfolioCarousel from "../reusable/MiniPortfolioCarousel";
+import axios from "axios";
 
 function LandingPageContent() {
+  const navigate = useNavigate();
   const [zipCode, setZipCode] = useState(null);
   const [submit, setSubmit] = useState(false);
+
+  const redirectToQuote = (details) => {
+    navigate("/Services", { state: details });
+  };
+
+  const handlelookUp = async () => {
+    if (!zipCode) {
+      return;
+    }
+
+    try {
+      const response = await axios.get(
+        `http://api.zippopotam.us/us/${zipCode}`
+      );
+      if (response.data.places && response.data.places.length > 0) {
+        const zip_location = response.data.places[0];
+        const details = {
+          city: zip_location["place name"],
+          state: zip_location["state"],
+          postal_code: zipCode,
+        };
+
+        redirectToQuote(details);
+      }
+    } catch (error) {
+      console.log("Error fetching data. Please try again.");
+    }
+  };
 
   const visual_1 =
     "https://res.cloudinary.com/dkwgg59ur/image/upload/v1716428239/Eden_Files/Eden_LandingPage/agzzla8jqwtlimvcks6e.webp";
@@ -22,7 +52,7 @@ function LandingPageContent() {
 
   const findLocation = (e) => {
     e.preventDefault();
-
+    handlelookUp();
     setSubmit(true);
   };
   return (
@@ -149,7 +179,7 @@ function LandingPageContent() {
               <input
                 type="text"
                 required
-                placeholder="Enter ZIP Code"
+                placeholder="Enter ZIP Code(USA only)"
                 onChange={(e) => setZipCode(e.target.value)}
                 disabled={submit}
               />

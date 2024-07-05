@@ -21,19 +21,6 @@ function PortfolioHeader() {
             solutions, explore how we've made a difference for our clients.
           </p>
         </div>
-
-        <div
-          className="corporate-clients reveal"
-          style={{ animationDelay: "0.5s" }}
-        >
-          <div className="title">Corporate Clients</div>
-          <div className="clients">
-            <SiIcons.SiMcdonalds className="icon" />
-            <SiIcons.SiWindows className="icon" />
-            <SiIcons.SiAccenture className="icon" />
-            <SiIcons.SiApple className="icon" />
-          </div>
-        </div>
       </div>
     </header>
   );

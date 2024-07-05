@@ -271,9 +271,6 @@ function ServicesContent() {
                 </p>
                 <Link to={"/Portfolio"}>View More</Link>
               </div>
-              <div className="carousel">
-                <ClientReviewsMini />
-              </div>
             </div>
           </div>
         </div>

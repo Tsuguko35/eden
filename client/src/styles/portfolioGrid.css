@@ -1,4 +1,5 @@
 #portfolioGrid{
+    position: relative;
     width: 100%;
     height: 100%;
 }
@@ -33,6 +34,8 @@
     z-index: 1;
 }
 
+
+
 #portfolioGrid > .wrapper > .grid-content > .title{
     text-align: center;
     color: white;
@@ -56,6 +59,41 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 50px;
 
+    border-radius: 5px;
+    overflow: hidden;
+    padding: 10px;
+}
+
+#portfolioGrid > .wrapper > .grid-content > .grid > .coming-soon{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    z-index: 2;
+}
+
+#portfolioGrid > .wrapper > .grid-content > .grid > .coming-soon > p{
+    color: var(--primary);
+}
+
+#portfolioGrid > .wrapper > .grid-content > .grid > .coming-soon > p.main{
+    font-size: 42px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#portfolioGrid > .wrapper > .grid-content > .grid > .coming-soon > p.sub{
+    font-size: 18px;
+    font-weight: 400;
+    max-width: 700px;
+    text-align: center;
 }
 
 #portfolioGrid > .wrapper > .grid-content > .grid > .item{
@@ -64,6 +102,8 @@
     height: 100%;
     flex-direction: column;
     gap: 20px;
+
+    filter: blur(5px);
 }
 
 #portfolioGrid > .wrapper > .grid-content > .grid > .item > img{
@@ -145,5 +185,13 @@
 
     #portfolioGrid > .wrapper > .grid-content > .grid{
         grid-template-columns: 1fr;
+    }
+
+    #portfolioGrid > .wrapper > .grid-content > .grid > .coming-soon > p.main{
+        font-size: 32px;
+    }
+    
+    #portfolioGrid > .wrapper > .grid-content > .grid > .coming-soon > p.sub{
+        font-size: 16px;
     }
 }

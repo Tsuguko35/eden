@@ -50,32 +50,6 @@
     text-align: center;
 }
 
-#portfolioContent > .wrapper > .achievements > .achievement-values{
-    display: flex;
-    gap: 200px;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-
-#portfolioContent > .wrapper > .achievements > .achievement-values > .achievement{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    align-items: center;
-}
-
-#portfolioContent > .wrapper > .achievements > .achievement-values > .achievement > .amount{
-    color: var(--primary);
-    font-size: 64px;
-    font-weight: 300;
-}
-
-#portfolioContent > .wrapper > .achievements > .achievement-values > .achievement > .label{
-    font-weight: 300;
-    font-size: 18px;
-}
-
 #portfolioContent > .wrapper > .achievements .skills-grid {
     width: 100%;
     display: grid;

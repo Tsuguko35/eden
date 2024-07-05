@@ -6,37 +6,6 @@ function PortfolioContent() {
   return (
     <div id="portfolioContent" className="portfolioContent">
       <div className="wrapper">
-        <div
-          id="_Achievements"
-          className="achievements reveal"
-          style={{ animationDelay: "0.7s" }}
-        >
-          <p className="title">Our Achievements</p>
-          <p className="desc">
-            Explore our milestones and accomplishments, showcasing our
-            dedication to excellence in home maintenance and appliance services.
-          </p>
-          <div className="achievement-values">
-            <div className="achievement">
-              <p className="amount">20+</p>
-              <p className="label">Years of experience</p>
-            </div>
-            <div className="achievement">
-              <p className="amount">150+</p>
-              <p className="label">Homes We Proudly Serve</p>
-            </div>
-            <div className="achievement">
-              <p className="amount">10k+</p>
-              <p className="label">Projects Done</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Grid */}
-      <PortfolioGrid />
-
-      <div className="wrapper">
         <div className="posts ignore-scroll feature">
           <p className="title">Facebook Posts</p>
           <iframe
@@ -46,7 +15,12 @@ function PortfolioContent() {
             allowtransparency="true"
           ></iframe>
         </div>
+      </div>
 
+      {/* Grid */}
+      <PortfolioGrid />
+
+      <div className="wrapper">
         <div id="_Statistics" className="achievements feature">
           <p className="title">
             Exceptional User Experience: Our Statistic Showcase
@@ -61,9 +35,9 @@ function PortfolioContent() {
               <span className="skill-name">Service Quality</span>
               <div className="progress-group">
                 <div className="progress-bar">
-                  <div className="progress" style={{ width: "90%" }}></div>
+                  <div className="progress" style={{ width: "92%" }}></div>
                 </div>
-                <span className="percentage">90%</span>
+                <span className="percentage">92%</span>
               </div>
             </div>
             <div className="skill">
@@ -79,9 +53,9 @@ function PortfolioContent() {
               <span className="skill-name">Service Response Time</span>
               <div className="progress-group">
                 <div className="progress-bar">
-                  <div className="progress" style={{ width: "80%" }}></div>
+                  <div className="progress" style={{ width: "94%" }}></div>
                 </div>
-                <span className="percentage">80%</span>
+                <span className="percentage">94%</span>
               </div>
             </div>
             <div className="skill">
@@ -94,21 +68,21 @@ function PortfolioContent() {
               </div>
             </div>
             <div className="skill">
-              <span className="skill-name">Response Time</span>
+              <span className="skill-name">Safety Standards</span>
               <div className="progress-group">
                 <div className="progress-bar">
-                  <div className="progress" style={{ width: "75%" }}></div>
+                  <div className="progress" style={{ width: "100%" }}></div>
                 </div>
-                <span className="percentage">75%</span>
+                <span className="percentage">100%</span>
               </div>
             </div>
             <div className="skill">
               <span className="skill-name">Service Reliability</span>
               <div className="progress-group">
                 <div className="progress-bar">
-                  <div className="progress" style={{ width: "90%" }}></div>
+                  <div className="progress" style={{ width: "100%" }}></div>
                 </div>
-                <span className="percentage">90%</span>
+                <span className="percentage">100%</span>
               </div>
             </div>
           </div>

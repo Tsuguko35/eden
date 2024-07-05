@@ -2,18 +2,22 @@ import React, { useRef, useState } from "react";
 import "../../styles/quoteForm.css";
 import emailjs from "emailjs-com";
 import LoadingDot from "../../assets/svg/LoadingDot";
+import { useLocation } from "react-router-dom";
 
 function QuoteForm() {
   const form = useRef();
+  const location = useLocation();
+  const recievedState = location.state;
+  console.log(recievedState);
   const [submit, setSubmit] = useState(false);
   const [submitStatus, setSubmitStatus] = useState(null);
   const [formData, setFormData] = useState({
     first_name: "",
     last_name: "",
     home_address: "",
-    city: "",
-    state: "",
-    postal_code: "",
+    city: recievedState ? recievedState.city : "",
+    state: recievedState ? recievedState.state : "",
+    postal_code: recievedState ? recievedState.postal_code : "",
     client_name: "",
     client_email: "",
     client_contact: "",

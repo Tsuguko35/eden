@@ -76,6 +76,7 @@
     font-weight: 300;
     font-size: 18px;
     overflow: auto;
+    text-align: justify;
 }
 
 #membersCarousel .card-image{

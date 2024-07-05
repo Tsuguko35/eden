@@ -64,6 +64,7 @@
     font-size: 18px;
     font-weight: 300;
     line-height: 137%;
+    text-align: justify;
 }
 
 #aboutUsContent > .wrapper > .about-details > .details-container > .image{
@@ -237,6 +238,7 @@
     color: white;
     font-weight: 300;
     line-height: 137%;
+    text-align: justify;
 }
 
 
