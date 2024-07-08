@@ -162,7 +162,7 @@ function ContactUsContent() {
                 </div>
                 <div className="detail">
                   <Io5Icons.IoCall />
-                  <p>913-228-4495</p>
+                  <p>(866) 847-7972</p>
                 </div>
                 <div className="detail">
                   <Io5Icons.IoMailSharp />
