@@ -79,20 +79,6 @@ function BecomeADealerContent() {
               </div>
             </div>
           </div>
-          <div className="counters reveal" style={{ animationDelay: "0.5s" }}>
-            <div className="count">
-              <p className="number">150+</p>
-              <p className="label">Companies Worldwide</p>
-            </div>
-            <div className="count">
-              <p className="number">25k</p>
-              <p className="label">Becomes our dealers</p>
-            </div>
-            <div className="count">
-              <p className="number">4.8 Rating</p>
-              <p className="label">Overall Reviews</p>
-            </div>
-          </div>
         </div>
       </div>
 
