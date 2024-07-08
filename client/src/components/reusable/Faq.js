@@ -1,9 +1,11 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "../../styles/faq.css";
 import { IoRemove, IoAdd } from "react-icons/io5";
+import { faqs_questions } from "../../utils";
 
 function Faq() {
-  const [activeQuestion, setActiveQuestion] = useState(0);
+  const [activeQuestion, setActiveQuestion] = useState("");
+  const midpoint = Math.ceil(faqs_questions.length / 2);
 
   const openFaq = (faqNumber) => {
     if (faqNumber === activeQuestion) {
@@ -17,104 +19,58 @@ function Faq() {
       <p className="title">Frequently Asked Questions</p>
       <div className="faq-flex">
         <div className="faq-group">
-          <div
-            className={`grid-item ${activeQuestion === 1 ? "active" : ""}`}
-            onClick={() => openFaq(1)}
-          >
-            <div className="title">
-              <p>What services does your company offer?</p>
-              <div className="icon">
-                <IoAdd />
+          {faqs_questions.slice(0, midpoint).map((faq, index) => {
+            return (
+              <div
+                key={`firsthalf-${index}`}
+                className={`grid-item ${
+                  activeQuestion === `firsthalf-${index}` ? "active" : ""
+                }`}
+                onClick={() => openFaq(`firsthalf-${index}`)}
+              >
+                <div className="title">
+                  <p>{faq.question}</p>
+                  <div className="icon">
+                    {activeQuestion === `firsthalf-${index}` ? (
+                      <IoRemove />
+                    ) : (
+                      <IoAdd />
+                    )}
+                  </div>
+                </div>
+
+                <div className="explanation">{faq.answer}</div>
               </div>
-            </div>
-            <div className="explanation">
-              We offer a wide range of home appliance maintenance and repair
-              services, including installation, troubleshooting, and preventive
-              maintenance for various household appliances.
-            </div>
-          </div>
-          <div
-            className={`grid-item ${activeQuestion === 2 ? "active" : ""}`}
-            onClick={() => openFaq(2)}
-          >
-            <div className="title">
-              <p>What services does your company offer?</p>
-              <div className="icon">
-                <IoAdd />
-              </div>
-            </div>
-            <div className="explanation">
-              We offer a wide range of home appliance maintenance and repair
-              services, including installation, troubleshooting, and preventive
-              maintenance for various household appliances.
-            </div>
-          </div>
-          <div
-            className={`grid-item ${activeQuestion === 3 ? "active" : ""}`}
-            onClick={() => openFaq(3)}
-          >
-            <div className="title">
-              <p>What services does your company offer?</p>
-              <div className="icon">
-                <IoAdd />
-              </div>
-            </div>
-            <div className="explanation">
-              We offer a wide range of home appliance maintenance and repair
-              services, including installation, troubleshooting, and preventive
-              maintenance for various household appliances.
-            </div>
-          </div>
+            );
+          })}
         </div>
         <div className="faq-group">
-          <div
-            className={`grid-item ${activeQuestion === 4 ? "active" : ""}`}
-            onClick={() => openFaq(4)}
-          >
-            <div className="title">
-              <p>What services does your company offer?</p>
-              <div className="icon">
-                <IoAdd />
-              </div>
-            </div>
-            <div className="explanation">
-              We offer a wide range of home appliance maintenance and repair
-              services, including installation, troubleshooting, and preventive
-              maintenance for various household appliances.
-            </div>
-          </div>
-          <div
-            className={`grid-item ${activeQuestion === 5 ? "active" : ""}`}
-            onClick={() => openFaq(5)}
-          >
-            <div className="title">
-              <p>What services does your company offer?</p>
-              <div className="icon">
-                <IoAdd />
-              </div>
-            </div>
-            <div className="explanation">
-              We offer a wide range of home appliance maintenance and repair
-              services, including installation, troubleshooting, and preventive
-              maintenance for various household appliances.
-            </div>
-          </div>
-          <div
-            className={`grid-item ${activeQuestion === 6 ? "active" : ""}`}
-            onClick={() => openFaq(6)}
-          >
-            <div className="title">
-              <p>What services does your company offer?</p>
-              <div className="icon">
-                <IoAdd />
-              </div>
-            </div>
-            <div className="explanation">
-              We offer a wide range of home appliance maintenance and repair
-              services, including installation, troubleshooting, and preventive
-              maintenance for various household appliances.
-            </div>
-          </div>
+          {faqs_questions
+            .slice(midpoint)
+            .slice(0, midpoint)
+            .map((faq, index) => {
+              return (
+                <div
+                  key={`secondhalf-${index}`}
+                  className={`grid-item ${
+                    activeQuestion === `secondhalf-${index}` ? "active" : ""
+                  }`}
+                  onClick={() => openFaq(`secondhalf-${index}`)}
+                >
+                  <div className="title">
+                    <p>{faq.question}</p>
+                    <div className="icon">
+                      {activeQuestion === `secondhalf-${index}` ? (
+                        <IoRemove />
+                      ) : (
+                        <IoAdd />
+                      )}
+                    </div>
+                  </div>
+                  <div className="explanation">{faq.answer}</div>
+                </div>
+              );
+            })}
         </div>
       </div>
     </div>
