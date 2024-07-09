@@ -35,45 +35,6 @@ function InnovationCarousel() {
             </div>
           </div>
         </SwiperSlide>
-        <SwiperSlide>
-          <div className="card">
-            <img src={image_1} alt="" />
-            <div className="text-content">
-              <p className="title">Smart Home Integration</p>
-              <div className="bullets">
-                <p className="bullet">• Home automation systems</p>
-                <p className="bullet">• Smart lighting and climate control</p>
-                <p className="bullet">• Security and surveillance solutions</p>
-              </div>
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="card">
-            <img src={image_1} alt="" />
-            <div className="text-content">
-              <p className="title">Smart Home Integration</p>
-              <div className="bullets">
-                <p className="bullet">• Home automation systems</p>
-                <p className="bullet">• Smart lighting and climate control</p>
-                <p className="bullet">• Security and surveillance solutions</p>
-              </div>
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="card">
-            <img src={image_1} alt="" />
-            <div className="text-content">
-              <p className="title">Smart Home Integration</p>
-              <div className="bullets">
-                <p className="bullet">• Home automation systems</p>
-                <p className="bullet">• Smart lighting and climate control</p>
-                <p className="bullet">• Security and surveillance solutions</p>
-              </div>
-            </div>
-          </div>
-        </SwiperSlide>
       </Swiper>
     </div>
   );

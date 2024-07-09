@@ -63,6 +63,7 @@
     border-radius: 8px;
     background-color: var(--faq-icon-bg);
     transition: all 250ms ease-in-out;
+
 }
 
 #faq > .faq-flex > .faq-group > .grid-item:hover > .title > .icon,
