@@ -95,30 +95,46 @@ input[type="number"] {
     position: fixed;
     right: 40px;
     bottom: 40px;
-    width: 60px;
+    width: 180px;
     height: 60px;
     background-color: #006AFF;
-    border-radius: 50%;
+    color: white;
+    font-weight: 600;
+    border-radius: 50px;
     display: flex;
+    padding-inline: 15px;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     z-index: 999999;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     transition: all 0.1s ease-in;
-}
-
-.messenger:hover{
+  }
+  
+  .messenger.mobile{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    justify-content: center;
+    padding: 0;
+  }
+  
+  .messenger:hover{
     transform: scale(1.1);
-}
-
-.messenger > svg{
+  }
+  
+  .messenger > svg{
+    width: 40px;
+    height: 40px;
+  }
+  
+  .messenger.mobile > svg{
     width: 55%;
     height: 55%;
-}
-
-.messenger > svg *{
+  }
+  
+  .messenger > svg *{
     color: white;
-}
+  }
 
 .feature{
     opacity: 0;
