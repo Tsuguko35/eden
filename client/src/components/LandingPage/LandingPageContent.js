@@ -162,9 +162,9 @@ function LandingPageContent() {
           <div className="map">
             <div className="map-container">
               <MapComponent
-                zipCode={zipCode}
-                submit={submit}
-                setSubmit={setSubmit}
+              // zipCode={zipCode}
+              // submit={submit}
+              // setSubmit={setSubmit}
               />
             </div>
           </div>
