@@ -68,10 +68,10 @@ function Footer() {
               <BiIcons.BiSolidPhoneCall />
               <p className="info">(866) 847-7972</p>
             </div>
-            <div className="contact-group">
+            {/* <div className="contact-group">
               <RiIcons.RiMailFill />
               <p className="info">info@goedenhome.com</p>
-            </div>
+            </div> */}
             <div className="contact-group">
               <MdIcons.MdLocationOn />
               <p className="info">6028 Stonybook CT, Topeka, KS 66614</p>

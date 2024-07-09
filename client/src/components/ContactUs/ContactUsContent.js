@@ -164,10 +164,10 @@ function ContactUsContent() {
                   <Io5Icons.IoCall />
                   <p>(866) 847-7972</p>
                 </div>
-                <div className="detail">
+                {/* <div className="detail">
                   <Io5Icons.IoMailSharp />
                   <p>info@gogenesissolar.com</p>
-                </div>
+                </div> */}
               </div>
               <div className="social-icons">
                 <Link
