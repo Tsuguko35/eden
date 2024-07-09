@@ -49,6 +49,7 @@
     font-size: 18px;
     color: var(--text);
     font-weight: 300;
+    text-align: justify;
 }
 
 #contactUsContent > .wrapper > .contact-us-container > .form > form > .inputs {

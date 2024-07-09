@@ -390,6 +390,10 @@
     font-weight: 300;
 }
 
+#servicesContent > .wrapper > .client-reviews > .client-reviews-container > .details-container > .text-content > .desc{
+    text-align: justify;
+}
+
 #servicesContent > .wrapper > .client-reviews > .client-reviews-container > .details-container > .text-content > .title{
     font-weight: bold;
     font-size: 24px;
