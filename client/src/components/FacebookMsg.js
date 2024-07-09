@@ -8,7 +8,7 @@ function FacebookMsg() {
     <a
       title="Send a message"
       className={`messenger ${windowWidth < 768 ? "mobile" : ""}`}
-      href="https://m.me/303695626163278"
+      href="https://m.me/281503175054414"
       target="_blank"
     >
       {windowWidth < 768 ? "" : "Message Us!"}
