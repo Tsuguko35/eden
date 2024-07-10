@@ -200,17 +200,19 @@ function QuoteForm() {
               name="client_service"
               value={formData.client_service}
               onChange={handleChange}
+              required
             >
               <option value="" disabled>
                 Select a service
               </option>
-              <option value="Blow-In Insulation">Blow-In Insulation</option>
-              <option value="LED Bulbs">LED Bulbs</option>
-              <option value="ECOSTella">ECOSTella</option>
-              <option value="HVAC Tune Up">HVAC Tune Up</option>
-              <option value="UVC Lights">UVC Lights</option>
-              <option value="Aeroseal">Aeroseal</option>
-              <option value="HVAC Replacement">HVAC Replacement</option>
+              <option value="Level 1 Package ESSENTIALS">
+                Level 1 Package ESSENTIALS
+              </option>
+              <option value="Level 2 Package PRO">Level 2 Package PRO</option>
+              <option value="Level 3 Package ELITE">
+                Level 3 Package ELITE
+              </option>
+              <option value="POWER PACK">POWER PACK</option>
             </select>
           </div>
         </div>
@@ -233,7 +235,7 @@ function QuoteForm() {
           {submitStatus === "error" && (
             <p className="error">Error! Try again.</p>
           )}
-          <button type="submit">
+          <button type="submit" disabled={submit}>
             {submit ? <LoadingDot width={35} height={35} /> : "Submit"}
           </button>
         </div>

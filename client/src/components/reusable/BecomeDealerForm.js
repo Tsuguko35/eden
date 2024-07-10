@@ -198,7 +198,7 @@ function BecomeDealerForm() {
           {submitStatus === "error" && (
             <p className="error">Error! Try again.</p>
           )}
-          <button type="submit">
+          <button type="submit" disabled={submit}>
             {submit ? <LoadingDot width={35} height={35} /> : "Submit"}
           </button>
         </div>
