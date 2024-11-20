@@ -28,7 +28,7 @@ function AboutUsHeader() {
               <FiIcons.FiPhone />
             </div>
             <div className="info">
-              <p>913-228-4495</p>
+              <p>866-847-7972</p>
               <p>Call Us Anytime</p>
             </div>
           </div>
